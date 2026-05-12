@@ -4,6 +4,7 @@ import QuestionCard from './QuestionCard.jsx'
 import { generateExam40 } from '../utils/examGenerator.js'
 import { saveSession, recordBatchAnswers, updateAccuracy } from '../utils/storage.js'
 import { computeSessionStats } from '../utils/stats.js'
+import { trackEvent } from '../utils/analytics.js'
 import questions from '../data/questions.json'
 
 const EXAM_DURATION = 60 * 60 // 60 minutes in seconds
@@ -47,10 +48,20 @@ export default function ExamGenerator() {
     setSubmitted(false)
     setResults(null)
     setPhase('exam')
+    trackEvent('start_40_question_exam', {
+      mode: 'exam',
+      total_questions: selected.length,
+    })
   }
 
   function handleSelect(key) {
-    setAnswers(prev => ({ ...prev, [examQuestions[current].id]: key }))
+    const q = examQuestions[current]
+    setAnswers(prev => ({ ...prev, [q.id]: key }))
+    trackEvent('answer_question', {
+      mode: 'exam',
+      chapter: q.week,
+      clo: q.clo.join(','),
+    })
   }
 
   function handleSubmit() {
@@ -63,13 +74,37 @@ export default function ExamGenerator() {
     updateAccuracy(answerMap, qMap)
     saveSession({
       mode: 'exam',
+      title: 'Tạo đề thi 40 câu',
+      startedAt: new Date(Date.now() - (EXAM_DURATION - timeLeft) * 1000).toISOString(),
+      completedAt: new Date().toISOString(),
       totalQuestions: examQuestions.length,
+      answeredCount: Object.keys(answers).length,
       correctCount: stats.correct,
+      wrongCount: stats.total - stats.correct,
       accuracy: stats.accuracy,
       byChapter: stats.byChapter,
       byCLO: stats.byCLO,
+      chapterBreakdown: stats.byChapter,
+      cloBreakdown: stats.byCLO,
       wrongIds: stats.wrongList.map(w => w.question.id),
+      answers: examQuestions.map(q => {
+        const selectedAnswer = answers[q.id] || null
+        return {
+          questionId: q.id,
+          selectedAnswer,
+          correctAnswer: q.answer,
+          isCorrect: selectedAnswer === q.answer,
+        }
+      }),
       timeUsed: EXAM_DURATION - timeLeft,
+    })
+    trackEvent('submit_40_question_exam', {
+      mode: 'exam',
+      score: stats.correct,
+      total_questions: examQuestions.length,
+      accuracy: stats.accuracy,
+      correct_count: stats.correct,
+      wrong_count: stats.total - stats.correct,
     })
     setResults(stats)
     setSubmitted(true)
@@ -88,7 +123,6 @@ export default function ExamGenerator() {
           <p>Đề thi mô phỏng cấu trúc CLO chính thức – 60 phút</p>
         </div>
         <div className="card" style={{ maxWidth: 600, margin: '0 auto', textAlign: 'center', padding: '40px' }}>
-          <div style={{ fontSize: '3.5rem', marginBottom: 16 }}>📝</div>
           <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: 8 }}>Sẵn sàng làm bài?</h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: 24, lineHeight: 1.7, fontSize: '0.9rem' }}>
             Đề thi gồm <strong>40 câu</strong> trắc nghiệm phân bổ theo đúng cấu trúc CLO từ Tuần 1–8.<br/>
@@ -104,7 +138,7 @@ export default function ExamGenerator() {
             </div>
           </div>
           <button className="btn btn-primary btn-lg" onClick={startExam} style={{ width: '100%' }}>
-            🚀 Bắt đầu làm bài
+            Bắt đầu làm bài
           </button>
         </div>
       </div>
@@ -172,7 +206,7 @@ export default function ExamGenerator() {
 
         {wrongList.length > 0 && (
           <div className="card">
-            <h3 className="mb-4" style={{ fontWeight: 700, color: 'var(--color-danger)' }}>❌ Câu trả lời sai ({wrongList.length} câu)</h3>
+            <h3 className="mb-4" style={{ fontWeight: 700, color: 'var(--color-danger)' }}>Câu trả lời sai ({wrongList.length} câu)</h3>
             {wrongList.map(({ question: q, userAnswer }, idx) => (
               <div key={q.id} className="wrong-item">
                 <div className="wi-meta">
@@ -196,8 +230,8 @@ export default function ExamGenerator() {
 
         <div className="flex gap-3 mt-6">
           <button className="btn btn-primary" onClick={startExam}>🔄 Làm lại đề mới</button>
-          <button className="btn btn-secondary" onClick={() => setPhase('idle')}>← Về trang đề thi</button>
-          <button className="btn btn-secondary" onClick={() => navigate('/')}>🏠 Tổng quan</button>
+          <button className="btn btn-secondary" onClick={() => setPhase('idle')}>Về trang đề thi</button>
+          <button className="btn btn-secondary" onClick={() => navigate('/')}>Tổng quan</button>
         </div>
       </div>
     )
@@ -233,10 +267,10 @@ export default function ExamGenerator() {
             mode="exam"
           />
           <div className="flex gap-2 mt-4">
-            <button className="btn btn-secondary" onClick={() => setCurrent(c => c - 1)} disabled={current === 0}>← Trước</button>
+            <button className="btn btn-secondary" onClick={() => setCurrent(c => c - 1)} disabled={current === 0}>Trước</button>
             {current < examQuestions.length - 1
-              ? <button className="btn btn-primary" onClick={() => setCurrent(c => c + 1)}>Tiếp theo →</button>
-              : <button className="btn btn-success" onClick={() => setShowSubmitModal(true)}>✅ Nộp bài</button>
+              ? <button className="btn btn-primary" onClick={() => setCurrent(c => c + 1)}>Tiếp theo</button>
+              : <button className="btn btn-success" onClick={() => setShowSubmitModal(true)}>Nộp bài</button>
             }
           </div>
         </div>
@@ -274,7 +308,7 @@ export default function ExamGenerator() {
             <p>Bạn đã trả lời <strong>{answeredCount}/{examQuestions.length}</strong> câu.{answeredCount < examQuestions.length ? ` Còn ${examQuestions.length - answeredCount} câu chưa trả lời.` : ' Tốt lắm!'}</p>
             <div className="modal-actions">
               <button className="btn btn-secondary" onClick={() => setShowSubmitModal(false)}>Tiếp tục làm</button>
-              <button className="btn btn-primary" onClick={handleSubmit}>✅ Nộp bài</button>
+              <button className="btn btn-primary" onClick={handleSubmit}>Nộp bài</button>
             </div>
           </div>
         </div>

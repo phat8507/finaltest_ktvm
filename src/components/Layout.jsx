@@ -1,22 +1,30 @@
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { exportProgress, importProgress, resetAllProgress } from '../utils/storage.js'
+import { trackEvent } from '../utils/analytics.js'
 
 const NAV_ITEMS = [
-  { path: '/',         icon: '🏠', label: 'Tổng quan' },
-  { path: '/exam',     icon: '📝', label: 'Đề thi 40 câu' },
-  { path: '/chapters', icon: '📚', label: 'Ôn theo chương' },
-  { path: '/wrong',    icon: '❌', label: 'Ôn câu sai' },
-  { path: '/history',  icon: '📊', label: 'Lịch sử làm bài' },
+  { path: '/', label: 'Tổng quan' },
+  { path: '/exam', label: 'Đề thi 40 câu' },
+  { path: '/chapters', label: 'Ôn theo chương' },
+  { path: '/wrong', label: 'Ôn câu sai' },
+  { path: '/history', label: 'Lịch sử làm bài' },
 ]
 
 export default function Layout({ children }) {
   const navigate = useNavigate()
   const location = useLocation()
   const [resetModal, setResetModal] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  function goTo(path) {
+    navigate(path)
+    setMenuOpen(false)
+  }
 
   function handleExport() {
     const data = exportProgress()
+    trackEvent('export_progress')
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -37,10 +45,11 @@ export default function Layout({ children }) {
         const text = await file.text()
         const data = JSON.parse(text)
         importProgress(data)
-        alert('✅ Nhập dữ liệu thành công! Tải lại trang để xem cập nhật.')
+        trackEvent('import_progress')
+        alert('Nhập dữ liệu thành công. Tải lại trang để xem cập nhật.')
         window.location.reload()
       } catch {
-        alert('❌ File không hợp lệ.')
+        alert('File không hợp lệ.')
       }
     }
     input.click()
@@ -48,13 +57,24 @@ export default function Layout({ children }) {
 
   function handleReset() {
     resetAllProgress()
+    trackEvent('reset_progress')
     setResetModal(false)
     window.location.reload()
   }
 
   return (
     <div className="app-shell">
-      <aside className="sidebar">
+      <header className="mobile-topbar">
+        <button className="menu-button" onClick={() => setMenuOpen(true)} aria-label="Mở menu">Menu</button>
+        <div>
+          <strong>MacroEco</strong>
+          <span>Ôn thi Kinh tế Vĩ mô</span>
+        </div>
+      </header>
+
+      {menuOpen && <div className="sidebar-backdrop" onClick={() => setMenuOpen(false)} />}
+
+      <aside className={`sidebar ${menuOpen ? 'open' : ''}`}>
         <div className="sidebar-logo">
           <h1>MacroEco</h1>
           <p>Ôn thi Kinh tế Vĩ mô</p>
@@ -64,17 +84,16 @@ export default function Layout({ children }) {
             <button
               key={item.path}
               className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
-              onClick={() => navigate(item.path)}
+              onClick={() => goTo(item.path)}
             >
-              <span className="nav-icon">{item.icon}</span>
               {item.label}
             </button>
           ))}
         </nav>
         <div className="sidebar-footer">
-          <button onClick={handleExport}>📤 Xuất tiến độ</button>
-          <button onClick={handleImport}>📥 Nhập tiến độ</button>
-          <button onClick={() => setResetModal(true)} style={{ color: '#fca5a5' }}>🗑️ Xóa toàn bộ</button>
+          <button onClick={handleExport}>Xuất tiến độ</button>
+          <button onClick={handleImport}>Nhập tiến độ</button>
+          <button onClick={() => setResetModal(true)} className="danger-link">Xóa toàn bộ</button>
         </div>
       </aside>
 
@@ -83,8 +102,8 @@ export default function Layout({ children }) {
       {resetModal && (
         <div className="modal-backdrop" onClick={() => setResetModal(false)}>
           <div className="modal" onClick={e => e.stopPropagation()}>
-            <h2>⚠️ Xác nhận xóa</h2>
-            <p>Toàn bộ lịch sử, câu sai, và tiến độ sẽ bị xóa vĩnh viễn. Bạn có chắc không?</p>
+            <h2>Xác nhận xóa</h2>
+            <p>Toàn bộ lịch sử, câu sai và tiến độ sẽ bị xóa vĩnh viễn. Bạn có chắc không?</p>
             <div className="modal-actions">
               <button className="btn btn-secondary" onClick={() => setResetModal(false)}>Hủy</button>
               <button className="btn btn-danger" onClick={handleReset}>Xóa tất cả</button>

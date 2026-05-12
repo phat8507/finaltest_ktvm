@@ -10,7 +10,7 @@ export function getOverallAccuracy() {
   if (!history.length) return null;
   const totals = history.reduce((acc, s) => {
     acc.correct += s.correctCount || 0;
-    acc.total += s.totalQuestions || 0;
+    acc.total += s.answeredCount || s.totalQuestions || 0;
     return acc;
   }, { correct: 0, total: 0 });
   return totals.total > 0 ? Math.round((totals.correct / totals.total) * 100) : 0;

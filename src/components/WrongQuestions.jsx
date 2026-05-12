@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import QuestionCard from './QuestionCard.jsx'
-import { getWrongQuestions, getMastered, recordAnswer, resetMastered, updateAccuracy } from '../utils/storage.js'
+import { getMastered, getWrongQuestions, recordAnswer, resetMastered, updateAccuracy } from '../utils/storage.js'
+import { trackEvent } from '../utils/analytics.js'
 import questions from '../data/questions.json'
 
 const qMap = Object.fromEntries(questions.map(q => [q.id, q]))
@@ -17,6 +18,13 @@ export default function WrongQuestions() {
   const wrongQuestions = wrongIds.map(id => qMap[id]).filter(Boolean)
   const nonMastered = wrongQuestions.filter(q => !mastered[q.id])
 
+  useEffect(() => {
+    trackEvent('review_wrong_questions', {
+      mode: 'wrong_questions',
+      total_questions: nonMastered.length,
+    })
+  }, [])
+
   function handleSelect(key) {
     const q = nonMastered[current]
     if (!q || sessionAnswers[q.id]) return
@@ -26,6 +34,13 @@ export default function WrongQuestions() {
     setSessionAnswers(prev => ({ ...prev, [q.id]: key }))
     recordAnswer(q.id, isCorrect)
     updateAccuracy({ [q.id]: isCorrect }, qMap)
+    trackEvent('answer_question', {
+      mode: 'wrong_questions',
+      chapter: q.week,
+      clo: q.clo.join(','),
+      correct_count: isCorrect ? 1 : 0,
+      wrong_count: isCorrect ? 0 : 1,
+    })
     setRefresh(r => r + 1)
   }
 
@@ -57,8 +72,7 @@ export default function WrongQuestions() {
       <div>
         <div className="page-header"><h1>Ôn câu sai</h1></div>
         <div className="empty-state">
-          <div className="empty-icon">🎉</div>
-          <h3>Không có câu nào cần ôn!</h3>
+          <h3>Không có câu nào cần ôn.</h3>
           <p>Bạn chưa làm bài hoặc đã trả lời đúng tất cả câu hỏi.</p>
         </div>
       </div>
@@ -69,8 +83,8 @@ export default function WrongQuestions() {
     return (
       <div>
         <div className="page-header"><h1>Ôn câu sai</h1></div>
-        <div className="alert alert-success">🏆 Bạn đã thuần thục tất cả {masteredCount} câu sai! Xuất sắc!</div>
-        <button className="btn btn-secondary" onClick={() => setResetModal(true)}>🔄 Đặt lại trạng thái thuần thục</button>
+        <div className="alert alert-success">Bạn đã thuần thục tất cả {masteredCount} câu sai.</div>
+        <button className="btn btn-secondary" onClick={() => setResetModal(true)}>Đặt lại trạng thái thuần thục</button>
         {resetModal && (
           <div className="modal-backdrop" onClick={() => setResetModal(false)}>
             <div className="modal" onClick={e => e.stopPropagation()}>
@@ -92,11 +106,11 @@ export default function WrongQuestions() {
       <div className="exam-nav-bar">
         <div>
           <h1 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--color-primary)' }}>Ôn câu sai</h1>
-          <span style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>
+          <span className="progress-text">
             {nonMastered.length} câu cần ôn · {masteredCount} đã thuần thục
           </span>
         </div>
-        <button className="btn btn-secondary btn-sm" onClick={() => setResetModal(true)}>🔄 Đặt lại thuần thục</button>
+        <button className="btn btn-secondary btn-sm" onClick={() => setResetModal(true)}>Đặt lại thuần thục</button>
       </div>
 
       <div className="question-container">
@@ -111,13 +125,13 @@ export default function WrongQuestions() {
           />
           {isMasteredNow && (
             <div className="mastered-badge">
-              🌟 Thuần thục! Câu này sẽ được loại khỏi danh sách ôn tập.
+              Thuần thục. Câu này sẽ được loại khỏi danh sách ôn tập.
             </div>
           )}
-          <div className="flex gap-2 mt-4">
-            <button className="btn btn-secondary" onClick={handlePrev} disabled={current === 0}>← Trước</button>
-            <button className="btn btn-primary" onClick={handleNext} disabled={current >= nonMastered.length - 1}>Tiếp theo →</button>
-            <span style={{ marginLeft: 'auto', lineHeight: '38px', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <div className="question-controls flex gap-2 mt-4">
+            <button className="btn btn-secondary" onClick={handlePrev} disabled={current === 0}>Trước</button>
+            <button className="btn btn-primary" onClick={handleNext} disabled={current >= nonMastered.length - 1}>Tiếp theo</button>
+            <span className="question-count">
               {current + 1} / {nonMastered.length}
             </span>
           </div>
@@ -130,10 +144,10 @@ export default function WrongQuestions() {
               Tổng câu sai: <strong>{wrongQuestions.length}</strong>
             </div>
             <div style={{ fontSize: '0.8rem', color: 'var(--color-success)', marginBottom: 6 }}>
-              ✅ Đã thuần thục: <strong>{masteredCount}</strong>
+              Đã thuần thục: <strong>{masteredCount}</strong>
             </div>
             <div style={{ fontSize: '0.8rem', color: 'var(--color-warning)', marginBottom: 6 }}>
-              📖 Cần ôn thêm: <strong>{nonMastered.length}</strong>
+              Cần ôn thêm: <strong>{nonMastered.length}</strong>
             </div>
             <div className="chapter-bar" style={{ marginTop: 8 }}>
               <div className="chapter-bar-fill" style={{ width: `${Math.round((masteredCount / wrongQuestions.length) * 100)}%`, background: 'var(--color-success)' }} />
@@ -152,7 +166,7 @@ export default function WrongQuestions() {
             })}
           </div>
           <p style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)', marginTop: 8 }}>
-            💡 Trả lời đúng 2 lần liên tiếp để đánh dấu thuần thục
+            Trả lời đúng 2 lần liên tiếp để đánh dấu thuần thục.
           </p>
         </div>
       </div>

@@ -1,26 +1,56 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { getHistory, clearHistory } from '../utils/storage.js'
+import { clearHistory, getHistory } from '../utils/storage.js'
+import { trackEvent } from '../utils/analytics.js'
 
-const MODE_LABELS = { exam: '📝 Đề thi 40 câu', chapter: '📚 Ôn theo chương', wrong: '❌ Ôn câu sai' }
+const FILTERS = [
+  { value: 'all', label: 'Tất cả' },
+  { value: 'exam', label: 'Đề 40 câu' },
+  { value: 'chapter-practice', label: 'Ôn theo chương' },
+  { value: 'wrong-practice', label: 'Ôn câu sai' },
+]
+
+const MODE_LABELS = {
+  exam: 'Đề 40 câu',
+  'chapter-practice': 'Ôn theo chương',
+  'wrong-practice': 'Ôn câu sai',
+}
 
 function formatDate(iso) {
+  if (!iso) return ''
   const d = new Date(iso)
-  return d.toLocaleString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+  return d.toLocaleString('vi-VN', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  })
 }
 
 function formatTime(secs) {
-  if (!secs) return '—'
+  if (!secs) return null
   const m = Math.floor(secs / 60)
   const s = secs % 60
   return `${m}p${s < 10 ? '0' + s : s}s`
+}
+
+function toBreakdownArray(value, keyName) {
+  if (Array.isArray(value)) return value
+  if (!value || typeof value !== 'object') return []
+  return Object.entries(value).map(([key, stats]) => ({ [keyName]: key, ...stats }))
 }
 
 export default function History() {
   const navigate = useNavigate()
   const [expanded, setExpanded] = useState(null)
   const [clearModal, setClearModal] = useState(false)
+  const [filter, setFilter] = useState('all')
   const history = getHistory()
+
+  const filteredHistory = useMemo(() => (
+    filter === 'all' ? history : history.filter(session => session.mode === filter)
+  ), [filter, history])
 
   function handleClear() {
     clearHistory()
@@ -28,14 +58,21 @@ export default function History() {
     window.location.reload()
   }
 
+  function handleFilterChange(value) {
+    setFilter(value)
+    setExpanded(null)
+    trackEvent('view_history_filter', {
+      mode: value,
+    })
+  }
+
   if (history.length === 0) {
     return (
       <div>
         <div className="page-header"><h1>Lịch sử làm bài</h1></div>
         <div className="empty-state">
-          <div className="empty-icon">📊</div>
-          <h3>Chưa có lịch sử</h3>
-          <p>Làm bài xong sẽ xuất hiện tại đây.</p>
+          <h3>Chưa có lịch sử làm bài.</h3>
+          <p>Hãy bắt đầu một đề thi hoặc ôn tập theo chương.</p>
           <button className="btn btn-primary" style={{ marginTop: 16 }} onClick={() => navigate('/exam')}>Bắt đầu làm bài</button>
         </div>
       </div>
@@ -44,91 +81,126 @@ export default function History() {
 
   return (
     <div>
-      <div className="page-header flex justify-between items-center" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+      <div className="page-header history-header">
         <div>
           <h1>Lịch sử làm bài</h1>
           <p>{history.length} phiên làm bài đã lưu</p>
         </div>
-        <button className="btn btn-danger btn-sm" onClick={() => setClearModal(true)}>🗑️ Xóa lịch sử</button>
+        <button className="btn btn-danger btn-sm" onClick={() => setClearModal(true)}>Xóa lịch sử</button>
       </div>
 
-      {history.map((session, idx) => {
-        const pct = session.accuracy
+      <div className="history-filters" role="group" aria-label="Lọc lịch sử">
+        {FILTERS.map(item => (
+          <button
+            key={item.value}
+            className={`history-filter-btn ${filter === item.value ? 'active' : ''}`}
+            onClick={() => handleFilterChange(item.value)}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+
+      {filteredHistory.length === 0 ? (
+        <div className="empty-state">
+          <h3>Không có phiên phù hợp với bộ lọc này.</h3>
+        </div>
+      ) : filteredHistory.map((session, idx) => {
+        const pct = session.accuracy || 0
         const isOpen = expanded === idx
+        const wrongIds = session.wrongIds || session.answers?.filter(answer => !answer.isCorrect).map(answer => answer.questionId) || []
+        const chapterRows = toBreakdownArray(session.chapterBreakdown || session.byChapter, 'week')
+        const cloRows = toBreakdownArray(session.cloBreakdown || session.byCLO, 'clo')
+
         return (
-          <div key={session.id || idx} className="history-item" style={{ flexDirection: 'column', alignItems: 'stretch', gap: 0 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-              <div style={{ textAlign: 'center', minWidth: 64 }}>
+          <article key={session.id || idx} className="history-item history-card">
+            <div className="history-card-main">
+              <div className="hist-score-block">
                 <div className="hist-score" style={{ color: pct >= 75 ? 'var(--color-success)' : pct >= 50 ? 'var(--color-warning)' : 'var(--color-danger)' }}>
                   {pct}%
                 </div>
-                <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)' }}>
-                  {session.correctCount}/{session.totalQuestions}
-                </div>
+                <div className="hist-count">{session.correctCount}/{session.answeredCount || session.totalQuestions}</div>
               </div>
-              <div className="hist-meta" style={{ flex: 1 }}>
+              <div className="hist-meta">
                 <div className="hist-mode">{MODE_LABELS[session.mode] || session.mode}</div>
+                <div className="hist-detail">{formatDate(session.completedAt || session.date)}</div>
+                {session.week && <div className="hist-detail">{session.week}{session.chapterName ? ` - ${session.chapterName}` : ''}</div>}
                 <div className="hist-detail">
-                  {formatDate(session.date)}
-                  {session.timeUsed ? ` · ⏱ ${formatTime(session.timeUsed)}` : ''}
-                  {session.wrongIds?.length ? ` · ❌ ${session.wrongIds.length} câu sai` : ''}
+                  {session.answeredCount || session.totalQuestions} câu đã trả lời
+                  {session.wrongCount > 0 ? ` · ${session.wrongCount} câu sai` : ''}
+                  {session.timeUsed ? ` · ${formatTime(session.timeUsed)}` : ''}
                 </div>
               </div>
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setExpanded(isOpen ? null : idx)}
-              >
-                {isOpen ? 'Thu gọn ↑' : 'Chi tiết ↓'}
-              </button>
+              <div className="history-actions">
+                {wrongIds.length > 0 && (
+                  <button className="btn btn-secondary btn-sm" onClick={() => navigate('/wrong')}>Ôn câu sai</button>
+                )}
+                <button className="btn btn-secondary btn-sm" onClick={() => setExpanded(isOpen ? null : idx)}>
+                  {isOpen ? 'Thu gọn' : 'Chi tiết'}
+                </button>
+              </div>
             </div>
 
             {isOpen && (
-              <div style={{ marginTop: 16, borderTop: '1px solid var(--color-border)', paddingTop: 16 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-                  {session.byChapter?.length > 0 && (
-                    <div>
-                      <h4 style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 8 }}>Theo chương</h4>
-                      <table className="breakdown-table">
-                        <thead><tr><th>Tuần</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
-                        <tbody>
-                          {session.byChapter.map(c => {
-                            const p = Math.round((c.correct / c.total) * 100)
-                            return (
-                              <tr key={c.week}>
-                                <td>{c.week}</td>
-                                <td>{c.correct}/{c.total}</td>
-                                <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
-                              </tr>
-                            )
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-                  {session.byCLO?.length > 0 && (
-                    <div>
-                      <h4 style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--color-primary)', marginBottom: 8 }}>Theo CLO</h4>
-                      <table className="breakdown-table">
-                        <thead><tr><th>CLO</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
-                        <tbody>
-                          {session.byCLO.map(c => {
-                            const p = Math.round((c.correct / c.total) * 100)
-                            return (
-                              <tr key={c.clo}>
-                                <td><span className="badge badge-blue">{c.clo}</span></td>
-                                <td>{c.correct}/{c.total}</td>
-                                <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
-                              </tr>
-                            )
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
+              <div className="history-detail-panel">
+                <div className="summary-grid">
+                  <span>Đúng: <strong>{session.correctCount}</strong></span>
+                  <span>Sai: <strong>{session.wrongCount}</strong></span>
+                  <span>Tổng câu: <strong>{session.totalQuestions}</strong></span>
+                  <span>Độ chính xác: <strong>{session.accuracy}%</strong></span>
                 </div>
+
+                {(chapterRows.length > 0 || cloRows.length > 0) && (
+                  <div className="history-breakdowns">
+                    {chapterRows.length > 0 && (
+                      <div>
+                        <h4>Theo chương</h4>
+                        <table className="breakdown-table">
+                          <thead><tr><th>Tuần</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
+                          <tbody>
+                            {chapterRows.map(row => {
+                              const total = row.total || 0
+                              const correct = row.correct || 0
+                              const p = total > 0 ? Math.round((correct / total) * 100) : 0
+                              return (
+                                <tr key={row.week}>
+                                  <td>{row.week}</td>
+                                  <td>{correct}/{total}</td>
+                                  <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
+                                </tr>
+                              )
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                    {cloRows.length > 0 && (
+                      <div>
+                        <h4>Theo CLO</h4>
+                        <table className="breakdown-table">
+                          <thead><tr><th>CLO</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
+                          <tbody>
+                            {cloRows.map(row => {
+                              const total = row.total || 0
+                              const correct = row.correct || 0
+                              const p = total > 0 ? Math.round((correct / total) * 100) : 0
+                              return (
+                                <tr key={row.clo}>
+                                  <td><span className="badge badge-blue">{row.clo}</span></td>
+                                  <td>{correct}/{total}</td>
+                                  <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
+                                </tr>
+                              )
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )}
-          </div>
+          </article>
         )
       })}
 

@@ -31,13 +31,61 @@ function save(key, value) {
 
 // ── History ───────────────────────────────────────────────────────────────────
 export function getHistory() {
-  return load(KEYS.HISTORY, []);
+  const history = load(KEYS.HISTORY, []);
+  return Array.isArray(history) ? history.map(normalizeSession) : [];
 }
 
 export function saveSession(session) {
   const history = getHistory();
-  history.unshift({ ...session, id: Date.now(), date: new Date().toISOString() });
+  history.unshift(normalizeSession(session));
   save(KEYS.HISTORY, history);
+}
+
+function normalizeMode(mode) {
+  if (mode === 'chapter') return 'chapter-practice';
+  if (mode === 'wrong') return 'wrong-practice';
+  return mode || 'exam';
+}
+
+function normalizeSession(session) {
+  const mode = normalizeMode(session.mode);
+  const completedAt = session.completedAt || session.date || new Date().toISOString();
+  const startedAt = session.startedAt || completedAt;
+  const correctCount = Number(session.correctCount || 0);
+  const totalQuestions = Number(session.totalQuestions || session.answeredCount || 0);
+  const answeredCount = Number(session.answeredCount || totalQuestions);
+  const wrongCount = Number(session.wrongCount ?? Math.max(answeredCount - correctCount, 0));
+  const accuracy = Number(session.accuracy ?? (answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0));
+
+  return {
+    ...session,
+    id: session.id || `session_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+    mode,
+    title: session.title || (mode === 'exam' ? 'Tạo đề thi 40 câu' : mode === 'chapter-practice' ? 'Ôn tập theo chương' : 'Ôn câu sai'),
+    startedAt,
+    completedAt,
+    date: completedAt,
+    totalQuestions,
+    answeredCount,
+    correctCount,
+    wrongCount,
+    accuracy,
+    answers: Array.isArray(session.answers) ? session.answers : [],
+    chapterBreakdown: session.chapterBreakdown || session.byChapter || {},
+    cloBreakdown: session.cloBreakdown || session.byCLO || {},
+  };
+}
+
+export function getExamHistory() {
+  return getHistory().filter(session => session.mode === 'exam');
+}
+
+export function getChapterPracticeHistory() {
+  return getHistory().filter(session => session.mode === 'chapter-practice');
+}
+
+export function getWrongPracticeHistory() {
+  return getHistory().filter(session => session.mode === 'wrong-practice');
 }
 
 export function clearHistory() {

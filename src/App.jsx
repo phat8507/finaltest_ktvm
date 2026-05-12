@@ -1,12 +1,25 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import Dashboard from './components/Dashboard.jsx'
 import ExamGenerator from './components/ExamGenerator.jsx'
 import ChapterPractice from './components/ChapterPractice.jsx'
 import WrongQuestions from './components/WrongQuestions.jsx'
 import History from './components/History.jsx'
+import { trackPageView } from './utils/analytics.js'
 
 export default function App() {
+  const location = useLocation()
+  const didTrackInitialPage = useRef(false)
+
+  useEffect(() => {
+    if (!didTrackInitialPage.current) {
+      didTrackInitialPage.current = true
+      return
+    }
+    trackPageView(location.pathname + location.search)
+  }, [location.pathname, location.search])
+
   return (
     <Layout>
       <Routes>
