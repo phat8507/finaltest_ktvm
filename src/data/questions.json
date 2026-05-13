@@ -200,52 +200,6 @@
     "tags": []
   },
   {
-    "id": "Q0010",
-    "question": "Phát biểu nào dưới đây là đúng nhất về thương mại quốc tế?",
-    "options": {
-      "A": "Thương mại làm cho mọi quốc gia đều có lợi.",
-      "B": "Thương mại làm cho một số quốc gia có lợi và một số quốc gia bị thiệt hại.",
-      "C": "Một quốc gia chỉ có lợi nếu trao đổi một loại hàng hóa mà quốc gia đó không thể sản xuất.",
-      "D": "Thương mại làm lợi cho quốc gia giàu và làm hại quốc gia nghèo."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "Thương mại"
-    ]
-  },
-  {
-    "id": "Q0011",
-    "question": "Canada có thể thu lợi khi tiến hành trao đổi thương mại:",
-    "options": {
-      "A": "chỉ với các quốc gia sản xuất các loại hàng hóa mà Canada không thể sản xuất.",
-      "B": "chỉ với các quốc gia kém phát triển hơn.",
-      "C": "chỉ với các quốc gia bên ngoài Bắc Mỹ.",
-      "D": "với bất cứ quốc gia nào."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0012",
     "question": "Trong nền kinh tế thị trường, các hoạt động kinh tế được dẫn dắt chủ yếu bởi:",
     "options": {
@@ -255,50 +209,6 @@
       "D": "lợi ích cá nhân và giá cả."
     },
     "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0013",
-    "question": "Lý do nào dưới đây nói chung không được các nhà kinh tế học coi là lý do hợp lý cho việc chính phủ can thiệp vào thị trường?",
-    "options": {
-      "A": "Để khắc phục sự thất bại của thị trường.",
-      "B": "Để khuyến khích sự công bằng.",
-      "C": "Để bảo đảm quyền sở hữu.",
-      "D": "Để bảo vệ một ngành công nghiệp khỏi sự cạnh tranh từ nước ngoài."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0014",
-    "question": "Yếu tố chủ yếu quyết định đến mức sống của một quốc gia là:",
-    "options": {
-      "A": "khả năng của quốc gia đó trong việc tạo lợi thế cạnh tranh so với nước ngoài.",
-      "B": "khả năng của quốc gia đó trong việc sản xuất hàng hóa và dịch vụ.",
-      "C": "tổng cung tiền trong nền kinh tế.",
-      "D": "độ tuổi trung bình của lực lượng lao động ở quốc gia đó."
-    },
-    "answer": "B",
     "explanation": "",
     "chapter": 1,
     "week": "Tuần 1",
@@ -334,28 +244,6 @@
     "tags": []
   },
   {
-    "id": "Q0016",
-    "question": "Để tăng mức sống, chính sách công nên:",
-    "options": {
-      "A": "đảm bảo rằng mọi người lao động đều được giáo dục tốt, có đầy đủ các công cụ cần thiết và công nghệ phù hợp.",
-      "B": "có mức trợ cấp thất nghiệp hào phóng.",
-      "C": "đưa nhiều người lao động từ trường trung học vào làm việc.",
-      "D": "đảm bảo một mức công bằng lớn hơn cho mọi người lao động."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0017",
     "question": "Mức lạm phát cao và dai dẳng gần như luôn là kết quả của:",
     "options": {
@@ -378,28 +266,6 @@
     "tags": [
       "Lạm phát"
     ]
-  },
-  {
-    "id": "Q0018",
-    "question": "Hầu hết các nhà kinh tế tin rằng sự tăng lên của khối lượng tiền sẽ gây ra:",
-    "options": {
-      "A": "sự tăng lên của nhu cầu về hàng hóa và dịch vụ.",
-      "B": "mức thất nghiệp thấp hơn trong ngắn hạn.",
-      "C": "mức lạm phát cao hơn trong dài hạn.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
   },
   {
     "id": "Q0019",
@@ -433,28 +299,6 @@
       "D": "các hộ gia đình phải đối mặt với nhiều quyết định."
     },
     "answer": "B",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0021",
-    "question": "Nguyên lý \"Con người phải đối mặt với sự đánh đổi\" áp dụng cho:",
-    "options": {
-      "A": "cá nhân.",
-      "B": "gia đình.",
-      "C": "xã hội.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "D",
     "explanation": "",
     "chapter": 1,
     "week": "Tuần 1",
@@ -597,28 +441,6 @@
     "source": "Ôn tập cuối kỳ",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0028",
-    "question": "Câu hỏi nào dưới đây không được các nhà kinh tế học vĩ mô quan tâm?",
-    "options": {
-      "A": "Tại sao thu nhập trung bình ở một số quốc gia lại cao trong khi ở một số quốc gia khác lại thấp?",
-      "B": "Tại sao giá dầu lại tăng cao khi chiến tranh bùng nổ ở Trung Đông?",
-      "C": "Tại sao sản xuất và việc làm lại mở rộng trong một số năm trong khi lại thu hẹp trong những năm khác?",
-      "D": "Tại sao giá cả lại tăng nhanh trong một số giai đoạn trong khi lại ổn định trong những giai đoạn khác?"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
     "tags": []
   },
   {
@@ -842,116 +664,6 @@
     "tags": []
   },
   {
-    "id": "Q0039",
-    "question": "Lý do nào dưới đây nói chung không được các nhà kinh tế học coi là lý do hợp lý cho việc chính phủ can thiệp vào thị trường?",
-    "options": {
-      "A": "Để khắc phục sự thất bại của thị trường",
-      "B": "Để khuyến khích sự công bằng",
-      "C": "Để bảo đảm quyền sở hữu",
-      "D": "Để bảo vệ một ngành công nghiệp khỏi sự cạnh tranh từ nước ngoài"
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0040",
-    "question": "Kinh tế học vĩ mô nghiên cứu",
-    "options": {
-      "A": "các quyết định của hộ gia đình và doanh nghiệp.",
-      "B": "sự tương tác giữa hộ gia đình và doanh nghiệp.",
-      "C": "các hiện tượng trong tổng thể nền kinh tế.",
-      "D": "sự điều tiết các doanh nghiệp và công đoàn."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0041",
-    "question": "Một cách để giúp các nhà kinh tế đơn giản hóa một vấn đề thực tế là",
-    "options": {
-      "A": "đưa ra các giả định.",
-      "B": "bỏ qua quá khứ.",
-      "C": "cố gắng nắm bắt mọi khía cạnh của thế giới thực trong mô hình họ xây dựng.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0042",
-    "question": "Phát biểu \"Không có bữa ăn trưa miễn phí\" dùng để mô tả nguyên lý rằng",
-    "options": {
-      "A": "hàng hóa là khan hiếm.",
-      "B": "con người phải đối mặt với sự đánh đổi.",
-      "C": "thu nhập phải được tạo ra.",
-      "D": "các hộ gia đình phải đối mặt với nhiều quyết định."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0043",
-    "question": "Để tăng mức sống, chính sách công nên",
-    "options": {
-      "A": "đảm bảo rằng mọi người lao động đều được giáo dục tốt, có đầy đủ các công cụ cần thiết và công nghệ phù hợp.",
-      "B": "có mức trợ cấp thất nghiệp hào phóng.",
-      "C": "đưa nhiều người lao động từ trường trung học vào làm việc.",
-      "D": "đảm bảo một mức công bằng lớn hơn cho mọi người lao động."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0044",
     "question": "Để đạt được kết quả kinh tế tốt, các nhà làm chính sách nên tập trung vào điểu gì?",
     "options": {
@@ -971,116 +683,6 @@
     "source": "Bài giảng",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0045",
-    "question": "Câu hỏi nào dưới đây sẽ được nghiên cứu trong Kinh tế học vi mô hơn là Kinh tế học vĩ mô?",
-    "options": {
-      "A": "Tại sao giá cả nói chung lại tăng cao hơn ở một số quốc gia so với các quốc gia khác?",
-      "B": "Tại sao lương lại khác nhau giữa các ngành?",
-      "C": "Tại sao thu nhập và sản lượng lại tăng trong một số giai đoạn và không tăng trong các giai đoạn khác?",
-      "D": "GDP hiện nay đang tăng với tốc độ như thế nào?"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0046",
-    "question": "Hoạt động nào sau đây là một ví dụ của người ra quyết định biên?",
-    "options": {
-      "A": "Quyết định nghỉ học đi làm ngay sau khi tốt nghiệp trung học phổ thông.",
-      "B": "Quyết định học thêm một giờ vào buổi tối",
-      "C": "Quyết định mua một chiếc xe hơi mới thay vì xe cũ",
-      "D": "Quyết định tiết kiệm toàn bộ tiền lương hàng tháng"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0047",
-    "question": "Súng và bơ được sử dụng để minh họa sự đánh đổi kinh điển trong xã hội giữa chi tiêu cho",
-    "options": {
-      "A": "hàng lâu bền và không lâu bền.",
-      "B": "nhập khẩu và xuất khẩu.",
-      "C": "quốc phòng và hàng tiêu dùng.",
-      "D": "khả năng thi hành luật và nông nghiệp."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0048",
-    "question": "Khi chính phủ thực hiện chính sách tái phân phối thu nhập và tài sản từ người giàu sang người nghèo thì tác động có thể xảy ra là",
-    "options": {
-      "A": "nâng cao công bằng xã hội.",
-      "B": "giảm hiệu quả của nền kinh tế.",
-      "C": "giảm phần thưởng cho sự lao động siêng năng.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0049",
-    "question": "Thương mại giữa các quốc gia có khuynh hướng",
-    "options": {
-      "A": "giảm cả sự cạnh tranh và chuyên môn hóa.",
-      "B": "giảm sự cạnh tranh và tăng cường chuyên môn hóa.",
-      "C": "tăng sự cạnh tranh và giảm chuyên môn hóa.",
-      "D": "tăng cả sự cạnh tranh và chuyên môn hóa."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 1,
-    "week": "Tuần 1",
-    "chapterName": "Giới thiệu Kinh tế học vĩ mô",
-    "clo": [
-      "CLO1"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
     "tags": []
   },
   {
@@ -1846,53 +1448,6 @@
     ]
   },
   {
-    "id": "Q0082",
-    "question": "Công ty Spots sản xuất mực và bán cho công ty Write để làm bút bi. Mực được sản xuất bởi công ty Spots được gọi là:",
-    "options": {
-      "A": "hàng hóa tồn kho.",
-      "B": "hàng hóa tạm thời.",
-      "C": "hàng hóa sơ cấp.",
-      "D": "hàng hóa trung gian."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0083",
-    "question": "Một công ty bán một lượng inox trị giá 20 tỷ VND cho công ty TT. TT dùng lượng inox đó để sản xuất bồn nước và bán cho người tiêu dùng với giá 30 tỷ VND. Các giao dịch này đóng góp vào GDP một lượng là:",
-    "options": {
-      "A": "10 tỷ VND.",
-      "B": "20 tỷ VND.",
-      "C": "30 tỷ VND.",
-      "D": "50 tỷ VND."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2",
-      "CLO9"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
-    "tags": [
-      "GDP"
-    ]
-  },
-  {
     "id": "Q0084",
     "question": "Anna, một công dân Mỹ chỉ làm việc ở Đức. Giá trị sản phẩm của cô làm ra ở Đức sẽ:",
     "options": {
@@ -2424,29 +1979,6 @@
     "tags": []
   },
   {
-    "id": "Q0106",
-    "question": "Phát biểu nào dưới đây là đúng?",
-    "options": {
-      "A": "GDP danh nghĩa đo lường giá trị sản xuất ở mức giá hiện hành, ngược lại GDP thực đo lường giá trị sản xuất ở mức giá cố định.",
-      "B": "GDP danh nghĩa đo lường giá trị sản xuất ở mức giá cố định, ngược lại GDP thực đo lường giá trị sản xuất ở mức giá hiện hành.",
-      "C": "GDP danh nghĩa đo lường giá trị sản xuất ở mức giá thị trường, ngược lại GDP thực đo lường giá trị sản xuất ở mức chi phí nguồn lực được sử dụng trong quá trình sản xuất.",
-      "D": "GDP danh nghĩa luôn đánh giá thấp giá trị sản lượng, ngược lại GDP thực luôn đánh giá cao giá trị sản lượng."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0107",
     "question": "GDP bao gồm tất cả",
     "options": {
@@ -2456,53 +1988,6 @@
       "D": "hàng hóa hợp pháp và bất hợp pháp, dịch vụ hợp pháp, nhưng loại bỏ mọi dịch vụ bất hợp pháp."
     },
     "answer": "C",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "GDP"
-    ]
-  },
-  {
-    "id": "Q0108",
-    "question": "Anna, một công dân Mỹ chỉ làm việc ở Đức. Giá trị sản phẩm của cô làm ra ở Đức sẽ",
-    "options": {
-      "A": "được tính vào GDP của cả Đức và Mỹ.",
-      "B": "được tính vào GDP của Đức nhưng không được tính vào GDP của Mỹ.",
-      "C": "được tính vào GDP của Mỹ nhưng không được tính vào GDP của Đức.",
-      "D": "không được tính vào GDP của cả Đức và Mỹ."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0109",
-    "question": "Điều nào sau đây làm GDP của Việt Nam năm 2020 tăng?",
-    "options": {
-      "A": "Vào tháng 2/2020, Lan bán 1 chiếc xe Honda Accord cũ sản xuất từ năm 2010 cho Tuyết.",
-      "B": "Vào tháng 2/2020, Lan mua 1 vé đi tham quan Thảo Cầm Viên.",
-      "C": "Vào tháng 4/2020, gia đình Lan ăn rau cô tự trồng trong vườn nhà.",
-      "D": "Tất cả những điều trên đều làm tăng GDP."
-    },
-    "answer": "B",
     "explanation": "",
     "chapter": 2,
     "week": "Tuần 2",
@@ -2538,30 +2023,6 @@
     "source": "Bài giảng",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "hard",
-    "tags": [
-      "GDP"
-    ]
-  },
-  {
-    "id": "Q0111",
-    "question": "GDP không phản ánh điều nào sau đây?",
-    "options": {
-      "A": "Giá trị của sự nghỉ ngơi",
-      "B": "Giá trị của hàng hóa và dịch vụ được sản xuất và tiêu dùng trong gia đình",
-      "C": "Chất lượng môi trường",
-      "D": "Tất cả các câu trên đều đúng"
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
     "tags": [
       "GDP"
     ]
@@ -2636,29 +2097,6 @@
     "tags": []
   },
   {
-    "id": "Q0115",
-    "question": "Một công ty của Mỹ vận hành một cửa hàng bán đồ ăn nhanh ở Romania. Phát biểu nào dưới đây là đúng?",
-    "options": {
-      "A": "Giá trị của hàng hóa và dịch vụ được sản xuất bởi cửa hàng đó được bao gồm trong cả GDP của Romania và Mỹ.",
-      "B": "1/2 giá trị của hàng hóa và dịch vụ được sản xuất bởi cửa hàng đó được tính vào GDP của Romania, và 1/2 giá trị còn lại được tính vào GDP của Mỹ.",
-      "C": "Giá trị của hàng hóa và dịch vụ được sản xuất bởi cửa hàng đó được tính vào GDP của Romania, nhưng không được tính vào GDP của Mỹ.",
-      "D": "Giá trị của hàng hóa và dịch vụ được sản xuất bởi cửa hàng đó được tính vào GDP của Mỹ, nhưng không được tính vào GDP của Romania."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
     "id": "Q0116",
     "question": "Điều nào sau đây không được tính vào GDP của Mỹ?",
     "options": {
@@ -2699,31 +2137,6 @@
     "chapterName": "Chỉ số kinh tế vĩ mô",
     "clo": [
       "CLO2"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "GDP"
-    ]
-  },
-  {
-    "id": "Q0118",
-    "question": "Sự thay đổi của GDP danh nghĩa",
-    "options": {
-      "A": "chỉ phản ánh sự thay đổi trong giá cả.",
-      "B": "chỉ phản ánh sự thay đổi trong số lượng sản phẩm được sản xuất.",
-      "C": "phản ánh cả sự thay đổi trong giá cả và số lượng sản phẩm được sản xuất.",
-      "D": "không phản ánh sự thay đổi trong giá cả hay số lượng sản phẩm được sản xuất."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 2,
-    "week": "Tuần 2",
-    "chapterName": "Chỉ số kinh tế vĩ mô",
-    "clo": [
-      "CLO2",
-      "CLO9"
     ],
     "source": "Bài giảng",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
@@ -3630,28 +3043,6 @@
     "tags": []
   },
   {
-    "id": "Q0158",
-    "question": "Sự tồn tại của tiền dẫn tới:",
-    "options": {
-      "A": "sự chuyên môn hóa sâu hơn trong sản xuất, nhưng không dẫn tới mức sống cao hơn.",
-      "B": "mức sống cao hơn, nhưng không chuyên môn hóa sâu hơn.",
-      "C": "sự chuyên môn hóa sâu hơn và mức sống cao hơn.",
-      "D": "không chuyên môn hóa sâu hơn cũng chẳng dẫn tới mức sống cao hơn."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0159",
     "question": "Các nhà kinh tế học sử dụng thuật ngữ tiền để đề cập đến:",
     "options": {
@@ -3706,29 +3097,6 @@
       "D": "nó có giá trị nội tại (intrinsic value)."
     },
     "answer": "B",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4",
-      "CLO9"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
-    "tags": []
-  },
-  {
-    "id": "Q0162",
-    "question": "Tập hợp các tài sản nào trong số các tập hợp dưới đây được sắp xếp đúng theo thứ tự từ có tính thanh khoản cao nhất đến có tính thanh khoản thấp nhất?",
-    "options": {
-      "A": "Tiền, trái phiếu, xe ô tô, nhà.",
-      "B": "Tiền, xe ô tô, nhà, trái phiếu.",
-      "C": "Trái phiếu, tiền, xe ô tô, nhà.",
-      "D": "Trái phiếu, xe ô tô, tiền, nhà."
-    },
-    "answer": "A",
     "explanation": "",
     "chapter": 4,
     "week": "Tuần 3",
@@ -3948,32 +3316,6 @@
     ]
   },
   {
-    "id": "Q0172",
-    "question": "Nếu ngân hàng trung ương muốn kìm hãm đà tăng của tổng cầu để chống lạm phát, họ có thể:",
-    "options": {
-      "A": "Giảm tỷ lệ dự trữ bắt buộc.",
-      "B": "Mua trái phiếu chính phủ.",
-      "C": "Tăng cung tiền.",
-      "D": "Bán trái phiếu chính phủ trên thị trường mở."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Lạm phát",
-      "Tiền tệ",
-      "AS-AD"
-    ]
-  },
-  {
     "id": "Q0173",
     "question": "Để tăng lượng cung tiền thì ngân hàng trung ương sẽ:",
     "options": {
@@ -4045,50 +3387,6 @@
     "tags": []
   },
   {
-    "id": "Q0176",
-    "question": "Khi một nền kinh tế sử dụng bạc làm tiền, thì tiền của nền kinh tế đó",
-    "options": {
-      "A": "là phương tiện dự trữ giá trị nhưng không phải là phương tiện trao đổi (a medium of exchange).",
-      "B": "là phương tiện trao đổi nhưng không phải là đơn vị hạch toán.",
-      "C": "là tiền pháp định.",
-      "D": "có giá trị nội tại."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0177",
-    "question": "Trong tài khoản chữ T của ngân hàng,",
-    "options": {
-      "A": "cả tiền gửi và dự trữ đều là tài sản.",
-      "B": "cả tiền gửi và dự trữ đều là nợ.",
-      "C": "tiền gửi là tài sản và dự trữ là nợ.",
-      "D": "dự trữ là tài sản và tiền gửi là nợ."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0178",
     "question": "Nếu tỷ lệ dự trữ bắt buộc là 15%, và ngân hàng không có dự trữ dư, và người dân chỉ giữ tiền gửi, không nắm giữ tiền mặt, thì khi ngân hàng bán 65 triệu USD trái phiếu ra công chúng, dự trữ của ngân hàng sẽ",
     "options": {
@@ -4135,28 +3433,6 @@
     "tags": []
   },
   {
-    "id": "Q0180",
-    "question": "Các quyết định của các nhà hoạch định chính sách liên quan đến cung tiền tạo thành",
-    "options": {
-      "A": "chính sách tiền tệ.",
-      "B": "chính sách tài khóa.",
-      "C": "chính sách ngân hàng.",
-      "D": "chính sách hoạt động."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
     "id": "Q0181",
     "question": "Phát biểu nào dưới đây là đúng?",
     "options": {
@@ -4188,29 +3464,6 @@
       "D": "Tất cả các khoản mục trên đều được tính trong M1."
     },
     "answer": "C",
-    "explanation": "",
-    "chapter": 4,
-    "week": "Tuần 3",
-    "chapterName": "Hệ thống tiền tệ và Chính sách tiền tệ",
-    "clo": [
-      "CLO4",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
-    "tags": []
-  },
-  {
-    "id": "Q0183",
-    "question": "Trong hệ thống ngân hàng dự trữ 100%,",
-    "options": {
-      "A": "ngân hàng không chấp nhận tiền gửi.",
-      "B": "ngân hàng không tác động đến cung tiền.",
-      "C": "các khoản cho vay là khoản mục tài sản duy nhất của ngân hàng.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "B",
     "explanation": "",
     "chapter": 4,
     "week": "Tuần 3",
@@ -4337,29 +3590,6 @@
     "tags": [
       "Tiền tệ"
     ]
-  },
-  {
-    "id": "Q0189",
-    "question": "Một nền kinh tế có dữ liệu sau: Khi thu nhập là 10.000 USD thì tiêu dùng của hộ gia đình là 6.500 USD. Khi thu nhập là 11.000 USD thì tiêu dùng của hộ gia đình là 7.250 USD. Khuynh hướng tiêu dùng biên (marginal propensity to consume - MPC) của nền kinh tế này bằng",
-    "options": {
-      "A": "0,650.",
-      "B": "0,750.",
-      "C": "0,650 hoặc 0,664 tùy thuộc vào thu nhập là 10.000 USD hay 11.000 USD.",
-      "D": "0,8."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 6,
-    "week": "Tuần 4",
-    "chapterName": "Chính sách tài khóa",
-    "clo": [
-      "CLO6",
-      "CLO9"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
-    "tags": []
   },
   {
     "id": "Q0190",
@@ -4500,30 +3730,6 @@
     ]
   },
   {
-    "id": "Q0196",
-    "question": "Khi chính phủ tăng thuế đánh vào hàng tiêu dùng nhập khẩu nhằm khuyến khích người dân dùng hàng nội địa thì:",
-    "options": {
-      "A": "đường tổng cầu dịch chuyển sang phải.",
-      "B": "đường tổng cầu dịch chuyển sang trái.",
-      "C": "đường tổng cung dịch chuyển sang phải.",
-      "D": "đường tổng cung dịch chuyển sang trái."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 6,
-    "week": "Tuần 4",
-    "chapterName": "Chính sách tài khóa",
-    "clo": [
-      "CLO6"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Thương mại"
-    ]
-  },
-  {
     "id": "Q0197",
     "question": "Yếu tố nào sau đây KHÔNG phải là công cụ của chính sách tài khóa?",
     "options": {
@@ -4533,30 +3739,6 @@
       "D": "Tăng chi tiêu chính phủ."
     },
     "answer": "A",
-    "explanation": "",
-    "chapter": 6,
-    "week": "Tuần 4",
-    "chapterName": "Chính sách tài khóa",
-    "clo": [
-      "CLO6"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "Tài khóa"
-    ]
-  },
-  {
-    "id": "Q0198",
-    "question": "Biện pháp nào sau đây là công cụ của chính sách tài khóa mở rộng?",
-    "options": {
-      "A": "Giảm thuế.",
-      "B": "Tăng chi tiêu chính phủ.",
-      "C": "Giảm thuế đồng thời với tăng chi tiêu chính phủ.",
-      "D": "Tất cả các phương án trên đều đúng."
-    },
-    "answer": "D",
     "explanation": "",
     "chapter": 6,
     "week": "Tuần 4",
@@ -5037,31 +4219,6 @@
     "source": "Bài giảng",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "easy",
-    "tags": [
-      "Số nhân"
-    ]
-  },
-  {
-    "id": "Q0219",
-    "question": "Một nền kinh tế có dữ liệu sau: Khi thu nhập là 10.000 USD thì tiêu dùng của hộ gia đình là 6.500 USD. Khi thu nhập là 11.000 USD thì tiêu dùng của hộ gia đình là 7.250 USD. Số nhân chi tiêu của nền kinh tế này bằng",
-    "options": {
-      "A": "2,85.",
-      "B": "1,53.",
-      "C": "4.",
-      "D": "7."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 6,
-    "week": "Tuần 4",
-    "chapterName": "Chính sách tài khóa",
-    "clo": [
-      "CLO6",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
     "tags": [
       "Số nhân"
     ]
@@ -7404,333 +6561,6 @@
     "tags": []
   },
   {
-    "id": "Q0320",
-    "question": "Yếu tố khác không đổi, nếu đô la Mỹ lên giá so với đồng Việt Nam thì người Mỹ sẽ tốn … tiền hơn khi mua hàng Việt và người Việt sẽ tốn … tiền hơn khi mua hàng Mỹ.",
-    "options": {
-      "A": "nhiều; nhiều",
-      "B": "ít; nhiều",
-      "C": "nhiều; ít",
-      "D": "ít; ít"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": []
-  },
-  {
-    "id": "Q0321",
-    "question": "Cán cân thanh toán của một quốc gia sẽ thay đổi khi",
-    "options": {
-      "A": "lãi suất trong nước thay đổi",
-      "B": "sản lượng quốc gia thay đổi",
-      "C": "tỷ giá hối đoái thay đổi",
-      "D": "Cả ba câu trên đều đúng"
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0322",
-    "question": "Phá giá nội tệ sẽ làm cho",
-    "options": {
-      "A": "xuất hiện lạm phát cầu kéo",
-      "B": "hàng xuất khẩu có ưu thế cạnh tranh hơn",
-      "C": "giảm dự trữ ngoại tệ của quốc gia",
-      "D": "Cả ba câu trên đều đúng"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0323",
-    "question": "Một quốc gia có xuất khẩu ròng âm vào năm 2024. Một năm sau, xuất khẩu ròng âm còn lớn hơn so với năm trước. Phát biểu nào dưới đây là đúng?",
-    "options": {
-      "A": "Thặng dư thương mại tăng.",
-      "B": "Thặng dư thương mại giảm.",
-      "C": "Thâm hụt thương mại tăng.",
-      "D": "Thâm hụt thương mại giảm."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Thương mại"
-    ]
-  },
-  {
-    "id": "Q0324",
-    "question": "Khi ngân hàng trung ương bán ra ngoại tệ thì lượng cung nội tệ sẽ",
-    "options": {
-      "A": "Tăng",
-      "B": "Giảm",
-      "C": "không đổi",
-      "D": "chưa thể kết luận"
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "Tiền tệ"
-    ]
-  },
-  {
-    "id": "Q0325",
-    "question": "Khi xuất khẩu hàng hoá và dịch vụ lớn hơn nhập khẩu hàng hoá và dịch vụ thì nền kinh tế",
-    "options": {
-      "A": "có cán cân thương mại thặng dư.",
-      "B": "có cán cân thương mại thâm hụt.",
-      "C": "có cán cân thương mại cân bằng.",
-      "D": "Tất cả các câu trên đều sai."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Thương mại"
-    ]
-  },
-  {
-    "id": "Q0326",
-    "question": "Vào năm 20XX, quốc gia C có giá trị hàng hoá và dịch vụ xuất khẩu là 5 tỷ USD, giá trị hàng hoá và dịch vụ nhập khẩu là 5,3 tỷ USD. Cán cân thương mại của quốc gia C",
-    "options": {
-      "A": "thặng dư 0,3 tỷ USD.",
-      "B": "thâm hụt 0,3 tỷ USD.",
-      "C": "cân bằng.",
-      "D": "chưa thể xác định."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8",
-      "CLO9"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "hard",
-    "tags": [
-      "Thương mại"
-    ]
-  },
-  {
-    "id": "Q0327",
-    "question": "Hoạt động nào sau đây làm tăng thâm hụt tài khoản vãng lai của Việt Nam",
-    "options": {
-      "A": "Việt Nam bán quặng kim loại cho Nhật Bản",
-      "B": "Nhật Bản mua gạo của nông dân Việt Nam",
-      "C": "Nhật bản mua bột mì từ Trung Quốc",
-      "D": "Việt Nam mua xe ô tô từ Nhật Bản"
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 8,
-    "week": "Tuần 5",
-    "chapterName": "Nền kinh tế mở",
-    "clo": [
-      "CLO8"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0328",
-    "question": "Hiệu ứng của cải bắt nguồn từ ý tưởng rằng mức giá chung tăng",
-    "options": {
-      "A": "làm tăng giá trị thực của tiền mà hộ gia đình nắm giữ.",
-      "B": "làm giảm giá trị thực của tiền mà hộ gia đình nắm giữ.",
-      "C": "làm tăng giá trị thực của đồng nội tệ trên thị trường ngoại hối.",
-      "D": "làm giảm giá trị thực của đồng nội tệ trên thị trường ngoại hối."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0329",
-    "question": "Giả sử nền kinh tế đang ở trạng thái cân bằng dài hạn, chính phủ giảm chi tiêu. Để ổn định sản lượng quốc gia, ngân hàng trung ương sẽ",
-    "options": {
-      "A": "tăng chi tiêu chính phủ.",
-      "B": "tăng cung tiền.",
-      "C": "giảm chi tiêu chính phủ.",
-      "D": "giảm cung tiền."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Tiền tệ"
-    ]
-  },
-  {
-    "id": "Q0330",
-    "question": "Các nhà làm chính sách muốn bù trừ tác động tới nền kinh tế khi có sự sụt giảm trong đường tổng cung sẽ sử dụng chính sách tài khóa và tiền tệ để làm dịch chuyển",
-    "options": {
-      "A": "đường tổng cung sang phải.",
-      "B": "đường tổng cung sang trái.",
-      "C": "đường tổng cầu sang phải.",
-      "D": "đường tổng cầu sang trái."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Tiền tệ",
-      "Tài khóa",
-      "AS-AD"
-    ]
-  },
-  {
-    "id": "Q0331",
-    "question": "Phát biểu nào dưới đây là đúng?",
-    "options": {
-      "A": "Mức giá chung cao hơn sẽ làm dịch chuyển đường cầu tiền sang phải.",
-      "B": "Khi đường cầu tiền dịch sang phải, lãi suất tăng.",
-      "C": "Lãi suất cao hơn làm giảm lượng cầu hàng hóa và dịch vụ.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0332",
-    "question": "Theo hiệu ứng lãi suất, mức giá chung tăng sẽ",
-    "options": {
-      "A": "làm tăng cầu tiền và lãi suất, giảm đầu tư.",
-      "B": "làm tăng cầu tiền và lãi suất, tăng đầu tư.",
-      "C": "làm tăng cầu tiền, giảm lãi suất và tăng đầu tư.",
-      "D": "làm giảm cầu tiền, lãi suất và đầu tư."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập giữa kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0333",
-    "question": "Biến nào sau đây có thể thay đổi mà không gây ra sự dịch chuyển của đường tổng cầu?",
-    "options": {
-      "A": "Lãi suất.",
-      "B": "Mức giá.",
-      "C": "Thuế suất.",
-      "D": "Cung tiền."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "AS-AD"
-    ]
-  },
-  {
     "id": "Q0334",
     "question": "Trong mô hình AS -- AD, sự dịch chuyển sang trái của đường AD có thể gây ra bởi:",
     "options": {
@@ -7892,30 +6722,6 @@
     "source": "Ôn tập cuối kỳ",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "medium",
-    "tags": [
-      "AS-AD"
-    ]
-  },
-  {
-    "id": "Q0341",
-    "question": "Đường tổng cầu:",
-    "options": {
-      "A": "dốc xuống vì lý do tương tự như đường cầu thị trường dốc xuống.",
-      "B": "thẳng đứng trong dài hạn.",
-      "C": "cho thấy mối quan hệ nghịch biến giữa mức giá chung và tổng lượng cầu của tất cả các hàng hóa và dịch vụ.",
-      "D": "Tất cả những điều trên là chính xác."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
     "tags": [
       "AS-AD"
     ]
@@ -8545,30 +7351,6 @@
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "medium",
     "tags": []
-  },
-  {
-    "id": "Q0369",
-    "question": "Đường tổng cầu dịch chuyển là do yếu tố nào sau đây thay đổi?",
-    "options": {
-      "A": "Năng lực sản xuất quốc gia.",
-      "B": "Mức giá chung.",
-      "C": "Lãi suất.",
-      "D": "Sản lượng tiềm năng."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 5,
-    "week": "Tuần 6",
-    "chapterName": "Mô hình AS-AD",
-    "clo": [
-      "CLO5"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": [
-      "AS-AD"
-    ]
   },
   {
     "id": "Q0370",
@@ -9295,30 +8077,6 @@
     ]
   },
   {
-    "id": "Q0400",
-    "question": "Chi phí của lạm phát nào sau đây có thể là đáng kể ngay cả khi lạm phát thực tế và lạm phát kỳ vọng là như nhau?",
-    "options": {
-      "A": "Chi phí thực đơn.",
-      "B": "Thuế lạm phát.",
-      "C": "Chi phí mòn giày.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "D",
-    "explanation": "",
-    "chapter": 7,
-    "week": "Tuần 7",
-    "chapterName": "Thất nghiệp và Lạm phát",
-    "clo": [
-      "CLO7"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Lạm phát"
-    ]
-  },
-  {
     "id": "Q0401",
     "question": "Của cải được tái phân phối từ người cho vay sang người đi vay khi lạm phát được kỳ vọng:",
     "options": {
@@ -9707,33 +8465,6 @@
     ]
   },
   {
-    "id": "Q0417",
-    "question": "Biểu đồ bên trái cho thấy đường tổng cung ngắn hạn (SRAS) và hai đường tổng cầu (AD). Trên biểu đồ bên phải, U(%) đại diện cho tỷ lệ thất nghiệp, P(%) đại diện cho tỷ lệ lạm phát. Đường Phillips được mô tả trên biểu đồ bên phải cung cấp cho các nhà hoạch định chính sách một danh sách các kết hợp",
-    "options": {
-      "A": "được áp dụng trong cả ngắn và dài hạn.",
-      "B": "các lựa chọn liên quan đến chính sách tài khóa, không phải các lựa chọn liên quan đến chính sách tiền tệ.",
-      "C": "của thất nghiệp và lạm phát.",
-      "D": "Tất cả các câu trên đều đúng."
-    },
-    "answer": "C",
-    "explanation": "",
-    "chapter": 7,
-    "week": "Tuần 7",
-    "chapterName": "Thất nghiệp và Lạm phát",
-    "clo": [
-      "CLO7"
-    ],
-    "source": "Bài giảng",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "medium",
-    "tags": [
-      "Thất nghiệp",
-      "Lạm phát",
-      "AS-AD",
-      "Phillips"
-    ]
-  },
-  {
     "id": "Q0418",
     "question": "Năm ngoái, một quốc gia có 800 công nhân làm việc trung bình 8 giờ và sản xuất 12.800 đơn vị sản phẩm. Năm nay, quốc gia này có 1.000 công nhân làm việc trung bình 8 giờ và sản xuất 14.000 đơn vị sản phẩm. Năng suất của đất nước này",
     "options": {
@@ -10068,28 +8799,6 @@
     "tags": []
   },
   {
-    "id": "Q0433",
-    "question": "Cổ phiếu (stock) đại diện cho:",
-    "options": {
-      "A": "sự cam kết trả nợ của doanh nghiệp.",
-      "B": "quyền sở hữu một phần trong một công ty cổ phần.",
-      "C": "khoản vay của chính phủ đối với người dân.",
-      "D": "sự đảm bảo về một mức cổ tức cố định hàng năm."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 3,
-    "week": "Tuần 8",
-    "chapterName": "Tăng trưởng kinh tế",
-    "clo": [
-      "CLO3"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
     "id": "Q0434",
     "question": "Sự khác biệt chính giữa tài trợ bằng nợ (phát hành trái phiếu) và tài trợ bằng vốn cổ phần (phát hành cổ phiếu) là:",
     "options": {
@@ -10172,29 +8881,6 @@
     "chapterName": "Tăng trưởng kinh tế",
     "clo": [
       "CLO3"
-    ],
-    "source": "Ôn tập cuối kỳ",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
-    "difficulty": "easy",
-    "tags": []
-  },
-  {
-    "id": "Q0438",
-    "question": "Trong một nền kinh tế đóng, cân bằng kinh tế vĩ mô đòi hỏi:",
-    "options": {
-      "A": "Tiết kiệm quốc gia bằng Đầu tư (S = I).",
-      "B": "Tiết kiệm tư nhân bằng Đầu tư.",
-      "C": "Tiết kiệm công bằng không.",
-      "D": "Xuất khẩu ròng bằng không."
-    },
-    "answer": "A",
-    "explanation": "",
-    "chapter": 3,
-    "week": "Tuần 8",
-    "chapterName": "Tăng trưởng kinh tế",
-    "clo": [
-      "CLO3",
-      "CLO9"
     ],
     "source": "Ôn tập cuối kỳ",
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
@@ -11686,34 +10372,6 @@
       "Lạm phát",
       "Thất nghiệp",
       "Tiền tệ"
-    ]
-  },
-  {
-    "id": "Q0500",
-    "question": "Trong ngắn hạn, nếu ngân hàng trung ương tăng cung tiền thì",
-    "options": {
-      "A": "giá cả, sản lượng và thất nghiệp tăng.",
-      "B": "giá cả, sản lượng tăng và thất nghiệp giảm.",
-      "C": "giá cả tăng, sản lượng và thất nghiệp giảm.",
-      "D": "giá cả giảm, sản lượng và thất nghiệp tăng."
-    },
-    "answer": "B",
-    "explanation": "",
-    "chapter": 7,
-    "week": "Tuần 7",
-    "chapterName": "Thất nghiệp và Lạm phát",
-    "clo": [
-      "CLO7",
-      "CLO9"
-    ],
-    "source": "Ôn tập cuối kỳ bổ sung",
-    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
-    "difficulty": "easy",
-    "tags": [
-      "Thất nghiệp",
-      "Tiền tệ",
-      "Ngân hàng",
-      "Cung tiền"
     ]
   },
   {
