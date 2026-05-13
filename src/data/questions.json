@@ -10747,5 +10747,1549 @@
     "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_chia_theo_tuan.docx",
     "difficulty": "medium",
     "tags": []
+  },
+  {
+    "id": "Q0463",
+    "question": "GDP thực đo lường điều gì sau đây?",
+    "options": {
+      "A": "tổng thu nhập thực",
+      "B": "năng suất sản xuất",
+      "C": "tiêu chuẩn sống",
+      "D": "Tất cả các câu trên đều đúng."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 2,
+    "week": "Tuần 2",
+    "chapterName": "Chỉ số kinh tế vĩ mô",
+    "clo": [
+      "CLO2",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0464",
+    "question": "Nếu GDP thực tăng lên, đường cầu tiền sẽ dịch chuyển sang",
+    "options": {
+      "A": "trái và lãi suất sẽ tăng lên.",
+      "B": "trái và lãi suất sẽ giảm đi.",
+      "C": "phải và lãi suất sẽ tăng lên.",
+      "D": "phải và lãi suất sẽ giảm xuống."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 3,
+    "week": "Tuần 3",
+    "chapterName": "Chính sách tiền tệ",
+    "clo": [
+      "CLO4",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "Tiền tệ"
+    ]
+  },
+  {
+    "id": "Q0465",
+    "question": "Các yếu tố khác không đổi, các ngân hàng tăng dự trữ từ lượng tiền gửi của người dân sẽ làm lượng cung tiền… . . Để khắc phục điều này, ngân hàng trung ương có thể…",
+    "options": {
+      "A": "giảm; bán trái phiếuchính phủ.",
+      "B": "giảm; mua trái phiếu chính phủ.",
+      "C": "tăng; bán trái phiếu chính phủ.",
+      "D": "tăng; mua trái phiếu chính phủ."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 3,
+    "week": "Tuần 3",
+    "chapterName": "Chính sách tiền tệ",
+    "clo": [
+      "CLO4",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Tiền tệ",
+      "Ngân hàng",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0466",
+    "question": "Khả năng tạo tiền của hệ thống ngân hàng sẽ nhỏ hơn mức tối đa được chỉ ra bởi số nhân tiền khi",
+    "options": {
+      "A": "lãi suất cao",
+      "B": "vận tốc của tiền đang tăng lên.",
+      "C": "mọi người giữ một phần tiền của họ dưới dạng tiền tệ.",
+      "D": "tỷ lệ thất nghiệp thấp."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 3,
+    "week": "Tuần 3",
+    "chapterName": "Chính sách tiền tệ",
+    "clo": [
+      "CLO4",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Ngân hàng"
+    ]
+  },
+  {
+    "id": "Q0467",
+    "question": "Nếu người dân giữ tỷ tiền mặt so nhiều hơn thì lượng cung tiền sẽ … và trung ương có thể khắc phục bằng cách ….",
+    "options": {
+      "A": "giảm; mua trái phiếu chính phủ.",
+      "B": "giảm; bán trái phiếu chính phủ.",
+      "C": "Tăng; mua trái phiếu chính phủ.",
+      "D": "tăng; bán trái phiếu chính phủ."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 3,
+    "week": "Tuần 3",
+    "chapterName": "Chính sách tiền tệ",
+    "clo": [
+      "CLO4",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Tiền tệ",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0468",
+    "question": "Trong trường hợp nào có thể chắc chắn GDP sẽ tăng trong ngắn hạn?",
+    "options": {
+      "A": "Chính phủ tăng chi tiêu và tăng thuế.",
+      "B": "Chính phủ tăng chi tiêu và giảm thuế.",
+      "C": "Chính phủ giảm chi tiêu và tăng thuế.",
+      "D": "Chính phủ giảm chi tiêu và giảm thuế."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 4,
+    "week": "Tuần 4",
+    "chapterName": "Chính sách tài khóa",
+    "clo": [
+      "CLO6"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "Thuế"
+    ]
+  },
+  {
+    "id": "Q0469",
+    "question": "Phát biểu nào dưới đây không đúng?",
+    "options": {
+      "A": "Mô hình tổng cung – tổng cầu (AS – AD) được hầu hết các nhà kinh tế học sử dụng để phân tích biến động nền kinh tế trong ngắn hạn.",
+      "B": "Trong thời kỳ suy thoái, các công ty đã cắt giảm sản xuất và công nhân bị sa thải.",
+      "C": "Suy thoái kinh tế là thời kỳ thu nhập thực tế giảm và tỷ lệ thất nghiệp giảm.",
+      "D": "Khủng hoảng (kinh tế) là sự suy thoái (kinh tế) nghiêm trọng."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "AD",
+      "AS",
+      "Suy thoái"
+    ]
+  },
+  {
+    "id": "Q0470",
+    "question": "Mô hình tổng cung – tổng cầu (AS – AD) giải thích mối quan hệ giữa",
+    "options": {
+      "A": "giá và lượng của một loại hàng hóa cụ thể.",
+      "B": "thất nghiệp và sản lượng đầu ra.",
+      "C": "tiền lương và việc làm.",
+      "D": "GDP thực và mức giá của nền kinh tế."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "Thất nghiệp",
+      "Tiền tệ",
+      "AD",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0471",
+    "question": "Khi lãi suất giảm,",
+    "options": {
+      "A": "doanh nghiệp muốn vay mượn nhiều hơn để xây nhà máy và mua thiết bị mới, hộ gia đình muốn vay mượn nhiều hơn để chi tiêu.",
+      "B": "doanh nghiệp muốn vay mượn nhiều hơn để xây nhà máy và mua thiết bị mới, hộ gia đình muốn vay mượn ít hơn để chi tiêu.",
+      "C": "doanh nghiệp muốn vay mượn ít hơn để xây nhà máy và mua thiết bị mới, hộ gia đình muốn vay mượn nhiều hơn để chi tiêu.",
+      "D": "doanh nghiệp muốn vay mượn ít hơn để xây nhà máy và mua thiết bị mới, hộ gia đình muốn vay mượn ít hơn để chi tiêu."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": []
+  },
+  {
+    "id": "Q0472",
+    "question": "Đường tổng cầu trong mô hình AS-AD dịch chuyển sang phải khi",
+    "options": {
+      "A": "chính phủ tăng chi tiêu cho quốc phòng.",
+      "B": "chính phủ tăng thuế thu nhập.",
+      "C": "chính phủ giảm thuế đầu vào của sản xuất.",
+      "D": "Tất cả các câu trên đều đúng."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thuế",
+      "AD",
+      "AS-AD"
+    ]
+  },
+  {
+    "id": "Q0473",
+    "question": "Trong mô hình AS-AD, vị trí của đường tổng cung dài hạn",
+    "options": {
+      "A": "được quyết định bởi công nghệ và nguồn lực khả dụng.",
+      "B": "tại điểm mà tỷ lệ thất nghiệp bằng không.",
+      "C": "dịch sang phải khi cung tiền tăng.",
+      "D": "tại điểm mà nền kinh tế sẽ không tăng trưởng nữa."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Cung tiền",
+      "AS",
+      "AS-AD"
+    ]
+  },
+  {
+    "id": "Q0474",
+    "question": "Sự cân bằng tổng cung – tổng cầu trong ngắn hạn có nghĩa là",
+    "options": {
+      "A": "không có thất nghiệp.",
+      "B": "không có lạm phát.",
+      "C": "sản lượng ổn định ở mức sản lượng tiềm năng.",
+      "D": "Tất cả các câu trên đều sai."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "AD",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0475",
+    "question": "Giả định các yếu tố khác không đổi, đường tổng cung dài hạn dịch sang trái, mức giá chung của nền kinh tế",
+    "options": {
+      "A": "và sản lượng của nền kinh tế đều tăng.",
+      "B": "và sản lượng của nền kinh tế đều giảm.",
+      "C": "tăng và sản lượng của nền kinh tế giảm.",
+      "D": "giảm và sản lượng của nền kinh tế tăng."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0476",
+    "question": "Tổng cầu sụt giảm trong khi tổng cung ngắn hạn và dài hạn không thay đổi thì",
+    "options": {
+      "A": "giá tăng trong ngắn hạn và giảm trong dài hạn.",
+      "B": "xuất hiện lạm phát.",
+      "C": "xuất hiện suy thoái trong ngắn hạn.",
+      "D": "trong dài hạn, tổng cung giảm."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "AD",
+      "AS",
+      "Suy thoái"
+    ]
+  },
+  {
+    "id": "Q0477",
+    "question": "Nền kinh tế đang ở trạng thái cân bằng dài hạn, chi phí cho yếu tố sản xuất (giá đầu vào) tăng làm",
+    "options": {
+      "A": "đường tổng cung dài hạn dịch chuyển sang trái, GDP thực giảm, sản lượng tiềm năng tăng.",
+      "B": "đường tổng cung ngắn hạn dịch chuyển sang trái, mức giá chung tăng, sản lượng tiềm năng giảm.",
+      "C": "đường tổng cung ngắn hạn dịch chuyển sang trái, GDP thực giảm xuống thấp hơn mức tiềm năng.",
+      "D": "đường tổng cung ngắn hạn dịch chuyển sang phải, mức giá chung tăng, GDP thực giảm xuống thấp hơn mức tiềm năng."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0478",
+    "question": "Đình lạm là tình trạng xảy ra khi",
+    "options": {
+      "A": "đường tổng cung dịch chuyển sang trái, giá cả tăng và GDP thực giảm.",
+      "B": "giá cả và GDP thực đều tăng do tổng cầu tăng.",
+      "C": "giá cả cứng nhắc, không thay đổi.",
+      "D": "tổng cung và tổng cầu dịch chuyển ngược hướng với nhau."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "AD",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0479",
+    "question": "Giả định các yếu tố khác không đổi, đường tổng cung dài hạn dịch sang phải, mức giá chung của nền kinh tế",
+    "options": {
+      "A": "và sản lượng của nền kinh tế đều tăng.",
+      "B": "và sản lượng của nền kinh tế đều giảm.",
+      "C": "tăng và sản lượng của nền kinh tế giảm.",
+      "D": "giảm và sản lượng của nền kinh tế tăng."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0480",
+    "question": "Theo mô hình tổng cung – tổng cầu, trong dài hạn, sự sụt giảm của cung tiền sẽ dẫn đến",
+    "options": {
+      "A": "cả mức giá chung và GDP thực đều giảm.",
+      "B": "cả mức giá chung và GDP thực đều tăng.",
+      "C": "mức giá chung giảm nhưng GDP thực không đổi.",
+      "D": "mức giá chung tăng nhưng GDP thực không đổi."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "Tiền tệ",
+      "Cung tiền",
+      "AD",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0481",
+    "question": "Giả định các điều kiện khác không đổi, công nhân và doanh nghiệp dự kiến giá sẽ tăng 2% nhưng thực tế giá tăng 3% thì",
+    "options": {
+      "A": "việc làm và sản xuất tăng.",
+      "B": "việc làm tăng và sản xuất giảm.",
+      "C": "việc làm giảm và sản xuất tăng.",
+      "D": "việc làm và sản xuất giảm."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": []
+  },
+  {
+    "id": "Q0482",
+    "question": "Giả định các yếu tố khác không đổi, mức giá chung giảm bất ngờ sẽ làm cho một số doanh nghiệp có giá bán sản phẩm của họ",
+    "options": {
+      "A": "thấp hơn mức giá mong muốn, làm tăng doanh số bán hàng của họ.",
+      "B": "thấp hơn mức giá mong muốn, làm giảm doanh số bán hàng của họ.",
+      "C": "cao hơn mức giá mong muốn, làm tăng doanh số bán hàng của họ.",
+      "D": "cao hơn mức giá mong muốn, làm giảm doanh số bán hàng của họ."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": []
+  },
+  {
+    "id": "Q0483",
+    "question": "Nếu đường tổng cầu dịch chuyển sang trái, thì trong ngắn hạn,",
+    "options": {
+      "A": "mức giá chung và GDP thực đều tăng.",
+      "B": "mức giá chung tăng và GDP thực giảm.",
+      "C": "mức giá chung giảm và GDP thực tăng.",
+      "D": "mức giá chung và GDP thực đều giảm."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "AD"
+    ]
+  },
+  {
+    "id": "Q0484",
+    "question": "Điều nào sau đây sẽ làm mức giá chung và GDP thực giảm trong ngắn hạn?",
+    "options": {
+      "A": "Đường tổng cung ngắn hạn dịch chuyển sang phải.",
+      "B": "Đường tổng cung ngắn hạn dịch chuyển sang trái.",
+      "C": "Đường tổng cầu dịch chuyển sang phải.",
+      "D": "Đường tổng cầu dịch chuyển sang trái."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "GDP",
+      "AD",
+      "AS"
+    ]
+  },
+  {
+    "id": "Q0485",
+    "question": "Xác định trạng thái cân bằng của một nền kinh tế có thể được nghiên cứu bằng",
+    "options": {
+      "A": "đẳng thức của AD và AS (1)",
+      "B": "cân bằng giữa tiết kiệm và đầu tư (2)",
+      "C": "lựa chọn (1) và (2) đúng",
+      "D": "Không câu nào đúng"
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": []
+  },
+  {
+    "id": "Q0486",
+    "question": "Nguyên nhân nào sau đây sẽ khiến mức giá giảm và sản lượng tăng trong ngắn hạn?",
+    "options": {
+      "A": "sự gia tăng của cung tiền",
+      "B": "sự sụt giảm của cung tiền",
+      "C": "cú sốc cung bất lợi",
+      "D": "cú sốc cung có lợi"
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 6,
+    "week": "Tuần 6",
+    "chapterName": "Mô hình AS-AD",
+    "clo": [
+      "CLO5"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Tiền tệ",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0487",
+    "question": "Chênh lệch giữa số người thất nghiệp thực tế với số người thất nghiệp tự nhiên được gọi là",
+    "options": {
+      "A": "thất nghiệp không tự nhiên (unnatural unemployment).",
+      "B": "thất nghiệp cơ cấu (structural unemployment).",
+      "C": "thất nghiệp cọ xát (frictional unemployment).",
+      "D": "thất nghiệp chu kỳ (cyclical unemployment)."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0488",
+    "question": "Tỷ lệ thất nghiệp tự nhiên",
+    "options": {
+      "A": "là hằng số.",
+      "B": "là tỷ lệ thất nghiệp mong muốn.",
+      "C": "không thể bị thay đổi bởi chính sách kinh tế.",
+      "D": "Tất cả các câu trên đều sai."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0489",
+    "question": "Thất nghiệp chu kỳ (cyclical unemployment) là",
+    "options": {
+      "A": "mối quan hệ giữa xác suất thất nghiệp và mức độ thay đổi kinh nghiệm của một người lao động.",
+      "B": "tần suất một người lao động có thể được tuyển dụng trong suốt cuộc đời.",
+      "C": "biến động hàng năm của thất nghiệp thực tế xung quanh tỷ lệ thất nghiệp tự nhiên.",
+      "D": "xu hướng dài hạn của thất nghiệp."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0490",
+    "question": "Những người thất nghiệp do đang tìm kiếm công việc phù hợp nhất được gọi là",
+    "options": {
+      "A": "thất nghiệp chu kỳ (cyclical unemployment).",
+      "B": "thất nghiệp cơ cấu (structural unemployment).",
+      "C": "thất nghiệp cọ xát (frictional unemployment).",
+      "D": "người lao động thiếu nghị lực."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0491",
+    "question": "Điều nào sau đây giải thích cho sự tồn tại của thất nghiệp cọ xát (frictional unemployment)?",
+    "options": {
+      "A": "tiền lương hiệu quả (efficiency wage)",
+      "B": "luật tiền lương tối thiểu",
+      "C": "người lao động tìm việc phù hợp hơn",
+      "D": "yêu cầu tăng lương của công đoàn"
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ"
+    ]
+  },
+  {
+    "id": "Q0492",
+    "question": "Một sự gia tăng trong mức lương tối thiểu",
+    "options": {
+      "A": "làm tăng cả lượng cầu và lượng cung lao động.",
+      "B": "làm giảm cả lượng cầu và lượng cung lao động.",
+      "C": "làm tăng lượng cầu và giảm lượng cung lao động.",
+      "D": "làm giảm lượng cầu và tăng lượng cung lao động."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": []
+  },
+  {
+    "id": "Q0493",
+    "question": "Các công đoàn có thể gây ra",
+    "options": {
+      "A": "thất nghiệp chu kỳ (cyclical unemployment).",
+      "B": "thất nghiệp cọ xát (frictional unemployment).",
+      "C": "thất nghiệp mùa vụ (seasonal unemployment).",
+      "D": "thất nghiệp cơ cấu (structural unemployment)."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0494",
+    "question": "Ngọc sở hữu doanh nghiệp của riêng mình. Ngà là một người lao động không được trả lương trong công việc kinh doanh của gia đình. Ai được gọi là có việc làm?",
+    "options": {
+      "A": "chỉ Ngọc",
+      "B": "chỉ Ngà",
+      "C": "cả Ngọc và Ngà",
+      "D": "không ai cả"
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": []
+  },
+  {
+    "id": "Q0495",
+    "question": "Giả sử một quốc gia có dân số trưởng thành là 50 triệu người, tỷ lệ tham gia lực lượng lao động là 60% và tỷ lệ thất nghiệp là 5%. Có bao nhiêu người có việc làm?",
+    "options": {
+      "A": "1,5 triệu người",
+      "B": "28,5 triệu người",
+      "C": "30 triệu người",
+      "D": "47,5 triệu người"
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0496",
+    "question": "Giả sử một quốc gia có dân số trưởng thành là 2 triệu, số lượng lao động có việc làm là 1,4 triệu, số lượng lao động thất nghiệp là 0,2 triệu. Tỷ lệ thất nghiệp là",
+    "options": {
+      "A": "80%.",
+      "B": "14,3%.",
+      "C": "12,5%.",
+      "D": "10%."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0497",
+    "question": "Theo lý thuyết Phillips, khi ngân hàng trung ương tăng cung tiền, trong dài hạn",
+    "options": {
+      "A": "lạm phát tăng và thất nghiệp giảm.",
+      "B": "lạm phát tăng và thất nghiệp không đổi.",
+      "C": "lạm phát không đổi và thất nghiệp giảm.",
+      "D": "lạm phát không đổi và thất nghiệp không đổi."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Ngân hàng",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0498",
+    "question": "Trên đồ thị, trục tung biểu thị tỷ lệ lạm phát, trục hoành biểu thị tỷ lệ thất nghiệp. Đường nào sau đây dốc xuống?",
+    "options": {
+      "A": "đường Phillips ngắn hạn và đường Phillips dài hạn",
+      "B": "không phải đường Phillips ngắn hạn và đường Phillips dài hạn",
+      "C": "đường Phillips dài hạn",
+      "D": "đường Phillips ngắn hạn"
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp"
+    ]
+  },
+  {
+    "id": "Q0499",
+    "question": "Nếu chính phủ giảm mức lương tối thiểu và theo đuổi chính sách tiền tệ mở rộng, thì về lâu dài,",
+    "options": {
+      "A": "cả tỷ lệ thất nghiệp và tỷ lệ lạm phát sẽ cao hơn.",
+      "B": "cả tỷ lệ thất nghiệp và tỷ lệ lạm phát sẽ thấp hơn.",
+      "C": "tỷ lệ thất nghiệp sẽ cao hơn và tỷ lệ lạm phát sẽ thấp hơn.",
+      "D": "tỷ lệ thất nghiệp sẽ thấp hơn và tỷ lệ lạm phát sẽ cao hơn."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "Tiền tệ"
+    ]
+  },
+  {
+    "id": "Q0500",
+    "question": "Trong ngắn hạn, nếu ngân hàng trung ương tăng cung tiền thì",
+    "options": {
+      "A": "giá cả, sản lượng và thất nghiệp tăng.",
+      "B": "giá cả, sản lượng tăng và thất nghiệp giảm.",
+      "C": "giá cả tăng, sản lượng và thất nghiệp giảm.",
+      "D": "giá cả giảm, sản lượng và thất nghiệp tăng."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Ngân hàng",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0501",
+    "question": "Trong dài hạn, nếu chính phủ tăng mức lương tối thiểu và theo đuổi chính sách tiền tệ mở rộng thì",
+    "options": {
+      "A": "cả tỷ lệ thất nghiệp và tỷ lệ lạm phát sẽ tăng",
+      "B": "cả tỷ lệ thất nghiệp và tỷ lệ lạm phát sẽ giảm",
+      "C": "tỷ lệ thất nghiệp sẽ cao hơn và tỷ lệ lạm phát sẽ giảm",
+      "D": "tỷ lệ thất nghiệp sẽ thấp hơn và tỷ lệ lạm phát sẽ tăng"
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "Tiền tệ"
+    ]
+  },
+  {
+    "id": "Q0502",
+    "question": "Trong dài hạn, nếu ngân hàng trung ương thực hiện chính sách tiền tệ mở rộng thì",
+    "options": {
+      "A": "cả tỷ lệ lạm phát và tỷ lệ thất nghiệp đều tăng",
+      "B": "tỷ lệ lạm phát tăng và tỷ lệ thất nghiệp không thay đổi",
+      "C": "cả tỷ lệ lạm phát và tỷ lệ thất nghiệp đều giảm",
+      "D": "tỷ lệ lạm phát giảm và tỷ lệ thất nghiệp không thay đổi"
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Ngân hàng"
+    ]
+  },
+  {
+    "id": "Q0503",
+    "question": "Trong ngắn hạn, các yếu tố khác không đổi, nếu tăng cung tiền lớn hơn dự kiến thì",
+    "options": {
+      "A": "tỷ lệ thất nghiệp tự nhiên tăng.",
+      "B": "tỷ lệ thất nghiệp tự nhiên giảm.",
+      "C": "tỷ lệ thất nghiệp cao hơn tỷ lệ thất nghiệp tự nhiên.",
+      "D": "tỷ lệ thất nghiệp thấp hơn tỷ lệ thất nghiệp tự nhiên."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Cung tiền"
+    ]
+  },
+  {
+    "id": "Q0504",
+    "question": "Trong ngắn hạn, các yếu tố khác không đổi, nếu tốc độ tăng trưởng cung tiền lớn hơn dự kiến thì",
+    "options": {
+      "A": "tỷ lệ thất nghiệp tự nhiên tăng.",
+      "B": "tỷ lệ thất nghiệp tự nhiên giảm.",
+      "C": "tỷ lệ thất nghiệp cao hơn tỷ lệ thất nghiệp tự nhiên.",
+      "D": "tỷ lệ thất nghiệp thấp hơn tỷ lệ thất nghiệp tự nhiên."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thất nghiệp",
+      "Tiền tệ",
+      "Cung tiền",
+      "Tăng trưởng"
+    ]
+  },
+  {
+    "id": "Q0505",
+    "question": "Chính sách A: dịch chuyển đường tổng cầu (trong mô hình AS-AD) sang phải 200 đơn vị; chính sách B: dịch chuyển đường tổng cầu (trong mô hình AS-AD) sang phải 300 đơn vị. Theo lý thuyết đường Phillips ngắn hạn, chính sách A sẽ dẫn đến",
+    "options": {
+      "A": "tỷ lệ thất nghiệp thấp hơn và tỷ lệ lạm phát thấp hơn chính sách B.",
+      "B": "tỷ lệ thất nghiệp thấp hơn và tỷ lệ lạm phát cao hơn chính sách B.",
+      "C": "tỷ lệ thất nghiệp cao hơn và tỷ lệ lạm phát thấp hơn chính sách B.",
+      "D": "tỷ lệ thất nghiệp cao hơn và tỷ lệ lạm phát cao hơn chính sách B."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "AD",
+      "AS-AD"
+    ]
+  },
+  {
+    "id": "Q0506",
+    "question": "Mối quan hệ ngắn hạn giữa lạm phát và thất nghiệp được đề cập trong lý thuyết",
+    "options": {
+      "A": "sự phân đôi cổ điển (the classical dichotomy).",
+      "B": "tính trung lập của tiền (the monetary neutrality).",
+      "C": "đường Phillips (the Phillips curve).",
+      "D": "Tất cả các câu trên đều sai."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "Tiền tệ"
+    ]
+  },
+  {
+    "id": "Q0507",
+    "question": "Khi đường tổng cầu dịch sang phải thì trong ngắn hạn,",
+    "options": {
+      "A": "lạm phát và thất nghiệp cao hơn.",
+      "B": "lạm phát cao hơn, còn thất nghiệp thấp hơn.",
+      "C": "thất nghiệp cao hơn, còn lạm phát thấp hơn.",
+      "D": "thất nghiệp và lạm phát thấp hơn."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Lạm phát",
+      "Thất nghiệp",
+      "AD"
+    ]
+  },
+  {
+    "id": "Q0508",
+    "question": "Biết CPI năm 2006 so với 2000 là 130, CPI 2005 so với 2001 là 125. Tỷ lệ lạm phát năm 2006 so với 2005 là",
+    "options": {
+      "A": "4%",
+      "B": "5%",
+      "C": "0%",
+      "D": "chưa thể kết luận"
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 7,
+    "week": "Tuần 7",
+    "chapterName": "Thất nghiệp và Lạm phát",
+    "clo": [
+      "CLO7",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "CPI",
+      "Lạm phát"
+    ]
+  },
+  {
+    "id": "Q0509",
+    "question": "Điều nào sau đây lần lượt là vốn con người (human capital) và vốn vật chất (physical capital)?",
+    "options": {
+      "A": "Đối với một công ty kế toán: kiến thức về luật thuế của các kế toán viên và số lượng giờ lao động của họ.",
+      "B": "Đối với cửa hàng tạp hóa: xe đẩy hàng và quầy tính tiền.",
+      "C": "Đối với một nhà hàng: kiến thức về chuẩn bị thức ăn của người đầu bếp và dụng cụ trong nhà bếp.",
+      "D": "Đối với một thư viện: tòa nhà và kiến thức về internet của các thủ thư."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Tiền tệ",
+      "Thuế",
+      "Vốn"
+    ]
+  },
+  {
+    "id": "Q0510",
+    "question": "Năng suất sản xuất",
+    "options": {
+      "A": "gần như giống nhau giữa các quốc gia và do đó không giúp giải thích sự khác biệt về mức sống giữa các quốc gia.",
+      "B": "giải thích rất ít về sự khác biệt trong mức sống giữa các quốc gia.",
+      "C": "giải thích một số, nhưng không phải hầu hết sự khác biệt về mức sống giữa các quốc gia.",
+      "D": "giải thích hầu hết sự khác biệt về mức sống giữa các quốc gia."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0511",
+    "question": "Tèo sở hữu một tiệm bánh. Tất cả các thợ làm bánh của anh làm việc 8 giờ mỗi ngày. Năm 2022, anh thuê 5 thợ làm bánh và họ sản xuất được 200 chiếc bánh mỗi ngày. Năm 2023, anh thuê 6 thợ làm bánh và họ sản xuất được 249 chiếc bánh mỗi ngày. Trong tiệm bánh của Tèo, năng suất năm 2023",
+    "options": {
+      "A": "giảm 2,33% so với năm 2022.",
+      "B": "tăng 2,33% so với năm 2022.",
+      "C": "tăng 3,75% so với năm 2022.",
+      "D": "tăng 24,5% so với năm 2022."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0512",
+    "question": "Hãy xem xét hai quốc gia. Quốc gia A có dân số 1.000 người, trong đó 800 người làm việc 8 giờ mỗi ngày để tạo ra 128.000 hàng hóa cuối cùng. Quốc gia B có dân số 2.000 người, trong đó 1.800 người làm việc 6 giờ mỗi ngày để tạo ra 270.000 hàng hóa cuối cùng.",
+    "options": {
+      "A": "Quốc gia A có năng suất cao hơn và GDP thực bình quân đầu người cao hơn quốc gia B.",
+      "B": "Quốc gia A có năng suất thấp hơn và GDP thực bình quân đầu người thấp hơn quốc gia B.",
+      "C": "Quốc gia A có năng suất cao hơn nhưng GDP thực bình quân đầu người thấp hơn quốc gia B.",
+      "D": "Quốc gia A có năng suất thấp hơn nhưng GDP thực bình quân đầu người cao hơn quốc gia B."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "GDP",
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0513",
+    "question": "Giả sử rằng trong mười năm qua, năng suất ở quốc gia A tăng nhanh hơn ở quốc gia B và dân số của cả hai quốc gia không thay đổi.",
+    "options": {
+      "A": "Theo đó, GDP thực bình quân đầu người ở quốc gia A phải cao hơn so với quốc gia B.",
+      "B": "Theo đó, GDP thực bình quân đầu người ở quốc gia A phải tăng nhanh hơn so với quốc gia B.",
+      "C": "Theo đó, mức sống ở quốc gia A phải cao hơn so với quốc gia B.",
+      "D": "Tất cả các câu trên đều đúng."
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "GDP",
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0514",
+    "question": "“Khi công nhân đã có một lượng lớn vốn để sử dụng trong sản xuất hàng hóa và dịch vụ, việc cho họ thêm một đơn vị vốn chỉ làm tăng năng suất của họ thêm một chút ít”. Câu nói này",
+    "options": {
+      "A": "đại diện cho quan điểm truyền thống của quá trình sản xuất.",
+      "B": "khẳng định rằng vốn (tư bản) mang đặc điểm hiệu suất giảm dần (diminishing returns).",
+      "C": "được đưa ra với giả định rằng số lượng vốn con người, tài nguyên thiên nhiên và công nghệ được giữ không đổi.",
+      "D": "Tất cả các câu trên đều đúng."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Năng suất",
+      "Vốn"
+    ]
+  },
+  {
+    "id": "Q0515",
+    "question": "Hãy xem xét ba quốc gia sau. Ở quốc gia A, tiết kiệm lên tới 3.000 USD và tiêu dùng lên tới 7.000 USD; ở quốc gia B, tiết kiệm lên tới 2.000 USD và tiêu dùng lên tới 8.000 USD; và ở quốc gia C, tiết kiệm lên tới 4.500 USD và tiêu dùng lên tới 10.500 USD. Tỷ lệ tiết kiệm",
+    "options": {
+      "A": "ở A cao hơn ở C và ở C cao hơn ở B.",
+      "B": "ở B cao hơn ở C và ở C cao hơn ở A.",
+      "C": "ở C cao hơn ở B, còn ở B và A thì bằng nhau.",
+      "D": "ở A cao hơn ở B, còn ở A và C thì bằng nhau."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": []
+  },
+  {
+    "id": "Q0516",
+    "question": "Một số nước nghèo dường như bị tụt lại phía sau thay vì bắt kịp các nước giàu. Điều nào sau đây có thể giải thích cho sự thất bại trong việc “bắt kịp” của một nước nghèo?",
+    "options": {
+      "A": "Nước nghèo có chính sách thương mại hướng ngoại.",
+      "B": "Nước nghèo cho phép đầu tư trực tiếp nước ngoài.",
+      "C": "Nước nghèo có quyền tài sản kém phát triển.",
+      "D": "Tất cả các câu trên đều đúng."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Thương mại"
+    ]
+  },
+  {
+    "id": "Q0517",
+    "question": "Năm ngoái, nước A có GDP thực là 27 tỷ USD. Năm nay, nước A có GDP thực là 31,5 tỷ USD. Những thay đổi nào trong dân số sau đây phù hợp với tốc độ tăng trưởng GDP thực bình quân đầu người là 5% trong năm qua?",
+    "options": {
+      "A": "Dân số giảm từ 88 triệu người xuống còn 84 triệu người.",
+      "B": "Dân số giảm từ 75 triệu người xuống còn 73 triệu người.",
+      "C": "Dân số tăng từ 45 triệu người lên thành 50 triệu người.",
+      "D": "Dân số tăng từ 60 triệu người lên thành 62 triệu người."
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "GDP",
+      "Tăng trưởng"
+    ]
+  },
+  {
+    "id": "Q0518",
+    "question": "Hàm sản xuất của một nền kinh tế mang thuộc tính hiệu suất không đổi theo quy mô (constant-returns-to-scale). Nếu lực lượng lao động của nền kinh tế tăng gấp đôi và tất cả các yếu tố đầu vào khác giữ nguyên, thì GDP thực sẽ",
+    "options": {
+      "A": "giữ nguyên.",
+      "B": "tăng đúng 50%.",
+      "C": "tăng đúng 100%.",
+      "D": "tăng, nhưng không nhất thiết phải bằng 50% hay 100%."
+    },
+    "answer": "D",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "GDP"
+    ]
+  },
+  {
+    "id": "Q0519",
+    "question": "Năm 2022, Modern Electronics, Inc. đã sản xuất 60.000 máy tính, sử dụng 80 công nhân, mỗi người làm việc 8 giờ mỗi ngày. Năm 2023, công ty này đã sản xuất 76.500 máy tính, sử dụng 85 công nhân, mỗi người làm việc 10 giờ mỗi ngày. Từ năm 2022 đến 2023, năng suất tại Modern Electronics",
+    "options": {
+      "A": "đã giảm 4%.",
+      "B": "duy trì không đổi.",
+      "C": "đã tăng 8,33%.",
+      "D": "đã tăng 27,5%."
+    },
+    "answer": "A",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0520",
+    "question": "Năm 2022, quốc gia A có dân số 2.700 người và GDP thực là 16.200.000 USD. Năm 2023, dân số là 2.800 người và GDP thực là 14.640.000 USD. Tốc độ tăng trưởng GDP thực bình quân đầu người của quốc gia A trong năm 2023 là bao nhiêu?",
+    "options": {
+      "A": "-2,4%",
+      "B": "-12,86%",
+      "C": "4,4%",
+      "D": "-5,2%"
+    },
+    "answer": "B",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "medium",
+    "tags": [
+      "GDP",
+      "Tăng trưởng"
+    ]
+  },
+  {
+    "id": "Q0521",
+    "question": "Mai và Lan làm việc cùng nhau trong 2 giờ để tạo ra tổng cộng 12 tấm nệm. Năng suất trung bình của mỗi người là bao nhiêu?",
+    "options": {
+      "A": "12 tấm nệm",
+      "B": "3 tấm nệm",
+      "C": "3 tấm nệm mỗi giờ lao động",
+      "D": "1,5 tấm nệm mỗi giờ lao động"
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Năng suất"
+    ]
+  },
+  {
+    "id": "Q0522",
+    "question": "Yếu tố nào sau đây có tác động lớn nhất đến tăng trưởng kinh tế dài hạn?",
+    "options": {
+      "A": "Chi tiêu chính phủ",
+      "B": "Chính sách tiền tệ",
+      "C": "Đầu tư vào vốn con người",
+      "D": "Tài nguyên thiên nhiên"
+    },
+    "answer": "C",
+    "explanation": "",
+    "chapter": 8,
+    "week": "Tuần 8",
+    "chapterName": "Tăng trưởng kinh tế",
+    "clo": [
+      "CLO3",
+      "CLO9"
+    ],
+    "source": "Ôn tập cuối kỳ bổ sung",
+    "sourceFile": "Tong_hop_trac_nghiem_KTVM_Final_cap_nhat_bo_sung.docx",
+    "difficulty": "easy",
+    "tags": [
+      "Tiền tệ",
+      "Chi tiêu chính phủ",
+      "Tăng trưởng",
+      "Vốn"
+    ]
   }
 ]
