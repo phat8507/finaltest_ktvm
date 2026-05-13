@@ -6,11 +6,17 @@ import ExamGenerator from './components/ExamGenerator.jsx'
 import ChapterPractice from './components/ChapterPractice.jsx'
 import WrongQuestions from './components/WrongQuestions.jsx'
 import History from './components/History.jsx'
-import { trackPageView } from './utils/analytics.js'
+import { trackEvent, trackPageView } from './utils/analytics.js'
 
 export default function App() {
   const location = useLocation()
   const didTrackInitialPage = useRef(false)
+
+  useEffect(() => {
+    trackEvent('app_loaded', {
+      app: 'macro_quiz',
+    })
+  }, [])
 
   useEffect(() => {
     if (!didTrackInitialPage.current) {
