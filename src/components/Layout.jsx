@@ -92,6 +92,7 @@ export default function Layout({ children }) {
           <h1>MacroEco</h1>
           <p>Ôn thi Kinh tế Vĩ mô</p>
         </div>
+        <div className="sidebar-section-label nav-section-label">Study</div>
         <nav className="sidebar-nav">
           {NAV_ITEMS.map(item => (
             <button
