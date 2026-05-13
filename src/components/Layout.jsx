@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { exportProgress, importProgress, resetAllProgress } from '../utils/storage.js'
-import { trackEvent } from '../utils/analytics.js'
+import { sendManualAnalyticsTest, trackEvent } from '../utils/analytics.js'
 
 const NAV_ITEMS = [
   { path: '/', label: 'Tổng quan' },
@@ -16,6 +16,7 @@ export default function Layout({ children }) {
   const location = useLocation()
   const [resetModal, setResetModal] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [analyticsStatus, setAnalyticsStatus] = useState('')
 
   function goTo(path) {
     navigate(path)
@@ -62,6 +63,15 @@ export default function Layout({ children }) {
     window.location.reload()
   }
 
+  function handleAnalyticsTest() {
+    const sent = sendManualAnalyticsTest()
+    setAnalyticsStatus(
+      sent
+        ? 'GA tag detected. Test event sent.'
+        : 'GA tag not detected. It may be blocked by browser/adblock or missing from production build.'
+    )
+  }
+
   return (
     <div className="app-shell">
       <header className="mobile-topbar">
@@ -93,6 +103,12 @@ export default function Layout({ children }) {
         <div className="sidebar-footer">
           <button onClick={handleExport}>Xuất tiến độ</button>
           <button onClick={handleImport}>Nhập tiến độ</button>
+          <button onClick={handleAnalyticsTest}>Test Google Analytics</button>
+          {analyticsStatus && (
+            <p className="analytics-status" role="status" aria-live="polite">
+              {analyticsStatus}
+            </p>
+          )}
           <button onClick={() => setResetModal(true)} className="danger-link">Xóa toàn bộ</button>
         </div>
       </aside>

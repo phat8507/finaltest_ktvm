@@ -1,4 +1,4 @@
-const GA_MEASUREMENT_ID = 'G-JYVVHP0X6X'
+export const GA_MEASUREMENT_ID = 'G-JYVVHP0X6X'
 const CLIENT_ID_KEY = 'macro_ga_client_id'
 
 export function getCurrentPagePath() {
@@ -62,6 +62,36 @@ function collectFallback(eventName, params = {}) {
 
 function isGoogleTagLoaded() {
   return typeof window !== 'undefined' && Boolean(window.google_tag_manager)
+}
+
+function isAnalyticsDebugMode() {
+  if (typeof window === 'undefined') return false
+  return import.meta.env.DEV || new URLSearchParams(window.location.search).has('ga_debug')
+}
+
+export function isAnalyticsAvailable() {
+  return typeof window !== 'undefined' && typeof window.gtag === 'function'
+}
+
+export function sendManualAnalyticsTest() {
+  const hasGtag = isAnalyticsAvailable()
+
+  if (isAnalyticsDebugMode()) {
+    console.log('[GA debug] window.gtag exists:', hasGtag)
+    console.log('[GA debug] window.google_tag_manager exists:', isGoogleTagLoaded())
+    console.log('[GA debug] current page URL:', window.location.href)
+    console.log('[GA debug] Measurement ID:', GA_MEASUREMENT_ID)
+  }
+
+  if (!hasGtag) return false
+
+  window.gtag('event', 'manual_ga_test', {
+    test_source: 'debug_button',
+    app: 'macro_quiz',
+    debug_mode: true,
+  })
+
+  return true
 }
 
 export function trackPageView(path) {

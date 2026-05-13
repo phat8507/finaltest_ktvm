@@ -130,6 +130,12 @@ ul, ol { list-style: none; }
   transition: color var(--transition);
 }
 .sidebar-footer button:hover { color: #fff; }
+.analytics-status {
+  padding: 2px 12px 6px;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
 
 .main-content {
   margin-left: var(--sidebar-width);
