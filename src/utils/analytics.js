@@ -1,4 +1,4 @@
-export const GA_MEASUREMENT_ID = 'G-JYVVHP0X6X'
+export const GA_MEASUREMENT_ID = 'G-6V96C4VQ78'
 const CLIENT_ID_KEY = 'macro_ga_client_id'
 
 export function getCurrentPagePath() {
