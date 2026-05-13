@@ -8,8 +8,10 @@ const NAV_ITEMS = [
   { path: '/exam', label: 'Đề thi 40 câu' },
   { path: '/chapters', label: 'Ôn theo chương' },
   { path: '/wrong', label: 'Ôn câu sai' },
-  { path: '/history', label: 'Lịch sử làm bài' },
+  { path: '/history', label: 'Lịch sử' },
 ]
+
+const MOBILE_NAV_ITEMS = NAV_ITEMS.slice(0, 4)
 
 export default function Layout({ children }) {
   const navigate = useNavigate()
@@ -17,6 +19,7 @@ export default function Layout({ children }) {
   const [resetModal, setResetModal] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [analyticsStatus, setAnalyticsStatus] = useState('')
+  const showAnalyticsDebug = new URLSearchParams(location.search).has('ga_debug')
 
   function goTo(path) {
     navigate(path)
@@ -67,8 +70,8 @@ export default function Layout({ children }) {
     const sent = sendManualAnalyticsTest()
     setAnalyticsStatus(
       sent
-        ? 'GA tag detected. Test event sent.'
-        : 'GA tag not detected. It may be blocked by browser/adblock or missing from production build.'
+        ? 'Đã phát hiện thẻ GA. Sự kiện kiểm tra đã được gửi.'
+        : 'Không phát hiện thẻ GA. Có thể trình duyệt, adblock hoặc bản build production đang chặn thẻ.'
     )
   }
 
@@ -101,19 +104,37 @@ export default function Layout({ children }) {
           ))}
         </nav>
         <div className="sidebar-footer">
+          <div className="sidebar-section-label">Dữ liệu học tập</div>
           <button onClick={handleExport}>Xuất tiến độ</button>
           <button onClick={handleImport}>Nhập tiến độ</button>
-          <button onClick={handleAnalyticsTest}>Test Google Analytics</button>
-          {analyticsStatus && (
-            <p className="analytics-status" role="status" aria-live="polite">
-              {analyticsStatus}
-            </p>
-          )}
           <button onClick={() => setResetModal(true)} className="danger-link">Xóa toàn bộ</button>
+          {showAnalyticsDebug && (
+            <>
+              <div className="sidebar-section-label">Kiểm tra GA</div>
+              <button onClick={handleAnalyticsTest}>Kiểm tra Google Analytics</button>
+              {analyticsStatus && (
+                <p className="analytics-status" role="status" aria-live="polite">
+                  {analyticsStatus}
+                </p>
+              )}
+            </>
+          )}
         </div>
       </aside>
 
       <main className="main-content">{children}</main>
+
+      <nav className="mobile-bottom-nav" aria-label="Điều hướng nhanh">
+        {MOBILE_NAV_ITEMS.map(item => (
+          <button
+            key={item.path}
+            className={location.pathname === item.path ? 'active' : ''}
+            onClick={() => goTo(item.path)}
+          >
+            {item.label}
+          </button>
+        ))}
+      </nav>
 
       {resetModal && (
         <div className="modal-backdrop" onClick={() => setResetModal(false)}>

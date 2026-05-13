@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import QuestionCard from './QuestionCard.jsx'
 import { getAccuracyByChapter, recordAnswer, saveSession, updateAccuracy } from '../utils/storage.js'
 import { trackEvent } from '../utils/analytics.js'
@@ -31,7 +32,16 @@ function getChapterNumber(week) {
   return CHAPTERS.find(ch => ch.week === week)?.chapter || null
 }
 
+function getChapterStatus(acc) {
+  if (!acc?.total) return { label: 'Chưa bắt đầu', cls: 'badge-gray' }
+  const pct = Math.round((acc.correct / acc.total) * 100)
+  if (pct < 60) return { label: 'Cần ôn lại', cls: 'badge-red' }
+  if (pct >= 75) return { label: 'Tốt', cls: 'badge-green' }
+  return { label: 'Đang học', cls: 'badge-orange' }
+}
+
 export default function ChapterPractice() {
+  const location = useLocation()
   const [selectedWeek, setSelectedWeek] = useState(null)
   const [answers, setAnswers] = useState({})
   const [current, setCurrent] = useState(0)
@@ -42,8 +52,10 @@ export default function ChapterPractice() {
   const [summary, setSummary] = useState(null)
   const savedSessionRef = useRef(false)
   const latestSessionRef = useRef(null)
+  const consumedRequestedWeekRef = useRef(null)
 
   const accByChapter = getAccuracyByChapter()
+  const requestedWeek = location.state?.week
 
   const chapterPool = useMemo(() => {
     if (!selectedWeek) return []
@@ -141,6 +153,13 @@ export default function ChapterPractice() {
   }, [buildSession])
 
   useEffect(() => {
+    if (requestedWeek && !selectedWeek && consumedRequestedWeekRef.current !== requestedWeek) {
+      consumedRequestedWeekRef.current = requestedWeek
+      openChapter(requestedWeek)
+    }
+  }, [requestedWeek, selectedWeek])
+
+  useEffect(() => {
     if (selectedWeek && chapterQuestions.length > 0 && Object.keys(answers).length === chapterQuestions.length) {
       saveCurrentSession()
     }
@@ -157,20 +176,21 @@ export default function ChapterPractice() {
     }
   }, [])
 
-  function resetSessionState(week) {
+  function resetSessionState(week, shuffled = false) {
     const pool = questions.filter(q => q.week === week)
+    const order = shuffled ? shuffleArray(pool.map(q => q.id)) : pool.map(q => q.id)
     setAnswers({})
     setCurrent(0)
     setFilterCLO('all')
     setFilterSource('all')
-    setQuestionOrder(pool.map(q => q.id))
+    setQuestionOrder(order)
     setSessionStartedAt(new Date().toISOString())
     setSummary(null)
     savedSessionRef.current = false
   }
 
-  function openChapter(week) {
-    resetSessionState(week)
+  function openChapter(week, shuffled = false) {
+    resetSessionState(week, shuffled)
     setSelectedWeek(week)
     const chapter = CHAPTERS.find(ch => ch.week === week)
     trackEvent('start_chapter_practice', {
@@ -200,7 +220,6 @@ export default function ChapterPractice() {
       correct_count: isCorrect ? 1 : 0,
       wrong_count: isCorrect ? 0 : 1,
     })
-
   }
 
   function handleShuffle() {
@@ -232,11 +251,7 @@ export default function ChapterPractice() {
       const confirmed = window.confirm('Làm lại chương này sẽ đặt lại câu trả lời trong phiên hiện tại. Bạn có muốn tiếp tục không?')
       if (!confirmed) return
     }
-    setAnswers({})
-    setCurrent(0)
-    setSummary(null)
-    savedSessionRef.current = false
-    setSessionStartedAt(new Date().toISOString())
+    resetSessionState(selectedWeek)
   }
 
   function handleEndSession() {
@@ -255,30 +270,38 @@ export default function ChapterPractice() {
           <h1>Ôn tập theo chương</h1>
           <p>Chọn tuần để bắt đầu ôn tập với phản hồi tức thì</p>
         </div>
-        <div className="chapter-grid">
+        <div className="chapter-grid chapter-progress-grid">
           {CHAPTERS.map((ch, i) => {
             const acc = accByChapter[ch.week]
-            const pct = acc ? Math.round((acc.correct / acc.total) * 100) : null
+            const pct = acc?.total ? Math.round((acc.correct / acc.total) * 100) : 0
             const count = questions.filter(q => q.week === ch.week).length
+            const status = getChapterStatus(acc)
             return (
-              <div key={ch.week} className="chapter-card" style={{ borderLeftColor: COLORS[i] }} onClick={() => openChapter(ch.week)}>
-                <div className="chapter-week" style={{ color: COLORS[i] }}>{ch.week}</div>
-                <div className="chapter-name">{ch.name}</div>
-                <div className="chapter-meta">
-                  <span className="badge badge-blue" style={{ marginRight: 6 }}>{ch.clo}</span>
-                  <span>{count} câu</span>
+              <article key={ch.week} className="chapter-card chapter-progress-card" style={{ borderLeftColor: COLORS[i] }}>
+                <div className="chapter-card-header">
+                  <div>
+                    <div className="chapter-week" style={{ color: COLORS[i] }}>{ch.week}</div>
+                    <div className="chapter-name">{ch.name}</div>
+                  </div>
+                  <span className={`badge ${status.cls}`}>{status.label}</span>
                 </div>
-                {pct !== null && (
-                  <>
-                    <div className="chapter-bar">
-                      <div className="chapter-bar-fill" style={{ width: `${pct}%`, background: COLORS[i] }} />
-                    </div>
-                    <div className="chapter-progress-text">
-                      Độ chính xác: <strong>{pct}%</strong> ({acc.correct}/{acc.total} câu)
-                    </div>
-                  </>
-                )}
-              </div>
+
+                <div className="chapter-meta-grid">
+                  <span><strong>{count}</strong> câu hỏi</span>
+                  <span><strong>{acc?.total || 0}</strong> đã trả lời</span>
+                  <span><strong>{acc?.total ? `${pct}%` : '-'}</strong> chính xác</span>
+                </div>
+
+                <div className="chapter-bar">
+                  <div className="chapter-bar-fill" style={{ width: `${pct}%`, background: COLORS[i] }} />
+                </div>
+
+                <div className="chapter-actions">
+                  <button className="btn btn-primary btn-sm" onClick={() => openChapter(ch.week)}>Tiếp tục</button>
+                  <button className="btn btn-secondary btn-sm" onClick={() => openChapter(ch.week)}>Làm lại chương</button>
+                  <button className="btn btn-secondary btn-sm" onClick={() => openChapter(ch.week, true)}>Xáo câu hỏi</button>
+                </div>
+              </article>
             )
           })}
         </div>

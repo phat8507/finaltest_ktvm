@@ -5,13 +5,13 @@ import { trackEvent } from '../utils/analytics.js'
 
 const FILTERS = [
   { value: 'all', label: 'Tất cả' },
-  { value: 'exam', label: 'Đề 40 câu' },
+  { value: 'exam', label: 'Đề thi 40 câu' },
   { value: 'chapter-practice', label: 'Ôn theo chương' },
   { value: 'wrong-practice', label: 'Ôn câu sai' },
 ]
 
 const MODE_LABELS = {
-  exam: 'Đề 40 câu',
+  exam: 'Đề thi 40 câu',
   'chapter-practice': 'Ôn theo chương',
   'wrong-practice': 'Ôn câu sai',
 }
@@ -39,6 +39,10 @@ function toBreakdownArray(value, keyName) {
   if (Array.isArray(value)) return value
   if (!value || typeof value !== 'object') return []
   return Object.entries(value).map(([key, stats]) => ({ [keyName]: key, ...stats }))
+}
+
+function percent(correct = 0, total = 0) {
+  return total > 0 ? Math.round((correct / total) * 100) : 0
 }
 
 export default function History() {
@@ -113,7 +117,7 @@ export default function History() {
         const cloRows = toBreakdownArray(session.cloBreakdown || session.byCLO, 'clo')
 
         return (
-          <article key={session.id || idx} className="history-item history-card">
+          <article key={session.id || idx} className="history-item history-card report-card">
             <div className="history-card-main">
               <div className="hist-score-block">
                 <div className="hist-score" style={{ color: pct >= 75 ? 'var(--color-success)' : pct >= 50 ? 'var(--color-warning)' : 'var(--color-danger)' }}>
@@ -125,18 +129,19 @@ export default function History() {
                 <div className="hist-mode">{MODE_LABELS[session.mode] || session.mode}</div>
                 <div className="hist-detail">{formatDate(session.completedAt || session.date)}</div>
                 {session.week && <div className="hist-detail">{session.week}{session.chapterName ? ` - ${session.chapterName}` : ''}</div>}
-                <div className="hist-detail">
-                  {session.answeredCount || session.totalQuestions} câu đã trả lời
-                  {session.wrongCount > 0 ? ` · ${session.wrongCount} câu sai` : ''}
-                  {session.timeUsed ? ` · ${formatTime(session.timeUsed)}` : ''}
+                <div className="history-kpis">
+                  <span>Đúng: <strong>{session.correctCount}</strong></span>
+                  <span>Sai: <strong>{session.wrongCount}</strong></span>
+                  <span>Tổng: <strong>{session.totalQuestions}</strong></span>
+                  {session.timeUsed && <span>Thời gian: <strong>{formatTime(session.timeUsed)}</strong></span>}
                 </div>
               </div>
               <div className="history-actions">
                 {wrongIds.length > 0 && (
-                  <button className="btn btn-secondary btn-sm" onClick={() => navigate('/wrong')}>Ôn câu sai</button>
+                  <button className="btn btn-secondary btn-sm" onClick={() => navigate('/wrong')}>Ôn lại câu sai từ lần này</button>
                 )}
                 <button className="btn btn-secondary btn-sm" onClick={() => setExpanded(isOpen ? null : idx)}>
-                  {isOpen ? 'Thu gọn' : 'Chi tiết'}
+                  {isOpen ? 'Thu gọn' : 'Xem chi tiết'}
                 </button>
               </div>
             </div>
@@ -155,45 +160,39 @@ export default function History() {
                     {chapterRows.length > 0 && (
                       <div>
                         <h4>Theo chương</h4>
-                        <table className="breakdown-table">
-                          <thead><tr><th>Tuần</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
-                          <tbody>
-                            {chapterRows.map(row => {
-                              const total = row.total || 0
-                              const correct = row.correct || 0
-                              const p = total > 0 ? Math.round((correct / total) * 100) : 0
-                              return (
-                                <tr key={row.week}>
-                                  <td>{row.week}</td>
-                                  <td>{correct}/{total}</td>
-                                  <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
-                                </tr>
-                              )
-                            })}
-                          </tbody>
-                        </table>
+                        <div className="breakdown-list">
+                          {chapterRows.map(row => {
+                            const total = row.total || 0
+                            const correct = row.correct || 0
+                            const p = percent(correct, total)
+                            return (
+                              <div className="breakdown-row" key={row.week}>
+                                <span>{row.week}</span>
+                                <span>{correct}/{total}</span>
+                                <span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span>
+                              </div>
+                            )
+                          })}
+                        </div>
                       </div>
                     )}
                     {cloRows.length > 0 && (
                       <div>
                         <h4>Theo CLO</h4>
-                        <table className="breakdown-table">
-                          <thead><tr><th>CLO</th><th>Đúng/Tổng</th><th>%</th></tr></thead>
-                          <tbody>
-                            {cloRows.map(row => {
-                              const total = row.total || 0
-                              const correct = row.correct || 0
-                              const p = total > 0 ? Math.round((correct / total) * 100) : 0
-                              return (
-                                <tr key={row.clo}>
-                                  <td><span className="badge badge-blue">{row.clo}</span></td>
-                                  <td>{correct}/{total}</td>
-                                  <td><span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span></td>
-                                </tr>
-                              )
-                            })}
-                          </tbody>
-                        </table>
+                        <div className="breakdown-list">
+                          {cloRows.map(row => {
+                            const total = row.total || 0
+                            const correct = row.correct || 0
+                            const p = percent(correct, total)
+                            return (
+                              <div className="breakdown-row" key={row.clo}>
+                                <span className="badge badge-blue">{row.clo}</span>
+                                <span>{correct}/{total}</span>
+                                <span className={`accuracy-pill ${p < 50 ? 'low' : p < 75 ? 'mid' : 'high'}`}>{p}%</span>
+                              </div>
+                            )
+                          })}
+                        </div>
                       </div>
                     )}
                   </div>
