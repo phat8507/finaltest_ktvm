@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import QuestionCard from './QuestionCard.jsx'
 import { getAccuracyByChapter, recordAnswer, saveSession, updateAccuracy } from '../utils/storage.js'
 import { trackEvent } from '../utils/analytics.js'
+import { prepareQuestionsWithShuffledOptions, shuffleArray } from '../utils/shuffleOptions.js'
 import questions from '../data/questions.json'
 
 const COLORS = ['#2563eb','#7c3aed','#db2777','#059669','#d97706','#dc2626','#0891b2','#65a30d']
@@ -18,15 +19,6 @@ const CHAPTERS = Object.values(questions.reduce((acc, q) => {
   }
   return acc
 }, {})).sort((a, b) => (a.chapter || 0) - (b.chapter || 0))
-
-function shuffleArray(items) {
-  const shuffled = [...items]
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
-  }
-  return shuffled
-}
 
 function getChapterNumber(week) {
   return CHAPTERS.find(ch => ch.week === week)?.chapter || null
@@ -47,6 +39,7 @@ export default function ChapterPractice() {
   const [current, setCurrent] = useState(0)
   const [filterCLO, setFilterCLO] = useState('all')
   const [filterSource, setFilterSource] = useState('all')
+  const [preparedQuestions, setPreparedQuestions] = useState([])
   const [questionOrder, setQuestionOrder] = useState([])
   const [sessionStartedAt, setSessionStartedAt] = useState(null)
   const [summary, setSummary] = useState(null)
@@ -59,8 +52,8 @@ export default function ChapterPractice() {
 
   const chapterPool = useMemo(() => {
     if (!selectedWeek) return []
-    return questions.filter(q => q.week === selectedWeek)
-  }, [selectedWeek])
+    return preparedQuestions.filter(q => q.week === selectedWeek)
+  }, [preparedQuestions, selectedWeek])
 
   const chapterQuestions = useMemo(() => {
     let pool = chapterPool
@@ -85,7 +78,10 @@ export default function ChapterPractice() {
   }, [chapterPool])
 
   const answeredEntries = Object.entries(answers)
-  const correctCount = answeredEntries.filter(([id, ans]) => ans === qMap[id]?.answer).length
+  const sessionQuestionMap = useMemo(() => (
+    Object.fromEntries(chapterPool.map(q => [q.id, q]))
+  ), [chapterPool])
+  const correctCount = answeredEntries.filter(([id, ans]) => ans === sessionQuestionMap[id]?.answer).length
   const wrongCount = answeredEntries.length - correctCount
 
   const buildSession = useCallback((completedAt = new Date().toISOString()) => {
@@ -110,8 +106,11 @@ export default function ChapterPractice() {
       answers: answeredEntries.map(([questionId, selectedAnswer]) => ({
         questionId,
         selectedAnswer,
-        correctAnswer: qMap[questionId]?.answer || null,
-        isCorrect: selectedAnswer === qMap[questionId]?.answer,
+        correctAnswer: sessionQuestionMap[questionId]?.answer || qMap[questionId]?.answer || null,
+        originalAnswer: sessionQuestionMap[questionId]?.originalAnswer || qMap[questionId]?.answer || null,
+        displayedOptions: sessionQuestionMap[questionId]?.options || qMap[questionId]?.options || null,
+        optionShuffleMap: sessionQuestionMap[questionId]?.optionShuffleMap,
+        isCorrect: selectedAnswer === (sessionQuestionMap[questionId]?.answer || qMap[questionId]?.answer),
       })),
       chapterBreakdown: {
         [selectedWeek]: {
@@ -120,7 +119,7 @@ export default function ChapterPractice() {
         },
       },
       cloBreakdown: answeredEntries.reduce((acc, [questionId, selectedAnswer]) => {
-        const question = qMap[questionId]
+        const question = sessionQuestionMap[questionId] || qMap[questionId]
         if (!question) return acc
         question.clo.forEach(clo => {
           if (!acc[clo]) acc[clo] = { correct: 0, total: 0 }
@@ -130,7 +129,7 @@ export default function ChapterPractice() {
         return acc
       }, {}),
     }
-  }, [answeredEntries, chapterQuestions.length, correctCount, selectedWeek, sessionStartedAt, wrongCount])
+  }, [answeredEntries, chapterQuestions.length, correctCount, selectedWeek, sessionQuestionMap, sessionStartedAt, wrongCount])
 
   const saveCurrentSession = useCallback(() => {
     if (savedSessionRef.current) return null
@@ -178,7 +177,9 @@ export default function ChapterPractice() {
 
   function resetSessionState(week, shuffled = false) {
     const pool = questions.filter(q => q.week === week)
-    const order = shuffled ? shuffleArray(pool.map(q => q.id)) : pool.map(q => q.id)
+    const prepared = prepareQuestionsWithShuffledOptions(pool)
+    const order = shuffled ? shuffleArray(prepared.map(q => q.id)) : prepared.map(q => q.id)
+    setPreparedQuestions(prepared)
     setAnswers({})
     setCurrent(0)
     setFilterCLO('all')
@@ -261,6 +262,7 @@ export default function ChapterPractice() {
   function handleLeaveChapter() {
     saveCurrentSession()
     setSelectedWeek(null)
+    setPreparedQuestions([])
   }
 
   if (!selectedWeek) {

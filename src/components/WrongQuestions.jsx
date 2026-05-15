@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import QuestionCard from './QuestionCard.jsx'
 import { getHistory, getMastered, getWrongQuestions, recordAnswer, resetMastered, updateAccuracy } from '../utils/storage.js'
 import { trackEvent } from '../utils/analytics.js'
+import { prepareQuestionsWithShuffledOptions } from '../utils/shuffleOptions.js'
 import questions from '../data/questions.json'
 
 const qMap = Object.fromEntries(questions.map(q => [q.id, q]))
@@ -27,7 +28,12 @@ function getPreviousWrongAnswers(history) {
       const selected = answer.selectedAnswer
       const correct = answer.correctAnswer || qMap[questionId]?.answer
       if (selected && correct && selected !== correct) {
-        previous[questionId] = selected
+        previous[questionId] = {
+          selectedAnswer: selected,
+          selectedText: answer.displayedOptions?.[selected] || qMap[questionId]?.options?.[selected] || '',
+          correctAnswer: correct,
+          correctText: answer.displayedOptions?.[correct] || qMap[questionId]?.options?.[correct] || '',
+        }
       }
     })
   })
@@ -41,13 +47,15 @@ export default function WrongQuestions() {
   const [resetModal, setResetModal] = useState(false)
   const [filterWeek, setFilterWeek] = useState('all')
   const [refresh, setRefresh] = useState(0)
+  const [preparedWrongQuestions, setPreparedWrongQuestions] = useState(null)
 
   const wrongMap = getWrongQuestions()
   const wrongIds = Object.keys(wrongMap)
+  const wrongIdSignature = wrongIds.join('|')
   const mastered = getMastered()
   const history = getHistory()
   const previousWrongAnswers = useMemo(() => getPreviousWrongAnswers(history), [history])
-  const wrongQuestions = wrongIds.map(id => qMap[id]).filter(Boolean)
+  const wrongQuestions = preparedWrongQuestions || wrongIds.map(id => qMap[id]).filter(Boolean)
   const nonMastered = wrongQuestions.filter(q => !mastered[q.id])
   const filteredQuestions = filterWeek === 'all'
     ? nonMastered
@@ -64,6 +72,11 @@ export default function WrongQuestions() {
       total_questions: nonMastered.length,
     })
   }, [])
+
+  useEffect(() => {
+    if (preparedWrongQuestions !== null) return
+    setPreparedWrongQuestions(prepareQuestionsWithShuffledOptions(wrongIds.map(id => qMap[id]).filter(Boolean)))
+  }, [preparedWrongQuestions, wrongIdSignature, wrongIds])
 
   useEffect(() => {
     setCurrent(0)
@@ -217,7 +230,7 @@ export default function WrongQuestions() {
             />
             {q && previousWrongAnswers[q.id] && (
               <div className="previous-answer-note">
-                Lần trước bạn chọn: <strong>{previousWrongAnswers[q.id]}</strong> - {q.options[previousWrongAnswers[q.id]]}
+                Lần trước bạn chọn: <strong>{previousWrongAnswers[q.id].selectedAnswer}</strong> - {previousWrongAnswers[q.id].selectedText}
               </div>
             )}
             {isMasteredNow && (
@@ -244,7 +257,7 @@ export default function WrongQuestions() {
                         {item.clo.map(clo => <span key={clo} className="tag tag-clo">{clo}</span>)}
                       </div>
                       <h3>{item.question}</h3>
-                      <p>{previous ? `Bạn từng chọn ${previous} - ${item.options[previous]}` : 'Chưa có đáp án sai gần nhất trong lịch sử.'}</p>
+                      <p>{previous ? `Bạn từng chọn ${previous.selectedAnswer} - ${previous.selectedText}` : 'Chưa có đáp án sai gần nhất trong lịch sử.'}</p>
                       <p>Đáp án đúng: <strong>{item.answer}</strong> - {item.options[item.answer]}</p>
                     </div>
                     <button className="btn btn-secondary btn-sm" onClick={() => jumpToQuestion(item.id)}>

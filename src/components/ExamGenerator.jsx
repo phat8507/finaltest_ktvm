@@ -5,6 +5,7 @@ import { generateExam40 } from '../utils/examGenerator.js'
 import { saveSession, recordBatchAnswers, updateAccuracy } from '../utils/storage.js'
 import { computeSessionStats } from '../utils/stats.js'
 import { trackEvent } from '../utils/analytics.js'
+import { prepareQuestionsWithShuffledOptions } from '../utils/shuffleOptions.js'
 import questions from '../data/questions.json'
 
 const EXAM_DURATION = 60 * 60
@@ -37,7 +38,8 @@ export default function ExamGenerator() {
 
   function startExam() {
     const { selected, warnings: w } = generateExam40(questions)
-    setExamQuestions(selected)
+    const shuffledSelected = prepareQuestionsWithShuffledOptions(selected)
+    setExamQuestions(shuffledSelected)
     setWarnings(w)
     setAnswers({})
     setCurrent(0)
@@ -47,7 +49,7 @@ export default function ExamGenerator() {
     setPhase('exam')
     trackEvent('start_40_question_exam', {
       mode: 'exam',
-      total_questions: selected.length,
+      total_questions: shuffledSelected.length,
     })
   }
 
@@ -64,8 +66,9 @@ export default function ExamGenerator() {
   function handleSubmit() {
     setShowSubmitModal(false)
     const stats = computeSessionStats(examQuestions, answers)
+    const sessionQuestionMap = Object.fromEntries(examQuestions.map(q => [q.id, q]))
     const answerMap = Object.fromEntries(
-      Object.entries(answers).map(([id, ans]) => [id, ans === qMap[id]?.answer])
+      Object.entries(answers).map(([id, ans]) => [id, ans === sessionQuestionMap[id]?.answer])
     )
     recordBatchAnswers(answerMap)
     updateAccuracy(answerMap, qMap)
@@ -90,6 +93,9 @@ export default function ExamGenerator() {
           questionId: q.id,
           selectedAnswer,
           correctAnswer: q.answer,
+          originalAnswer: q.originalAnswer || qMap[q.id]?.answer || q.answer,
+          displayedOptions: q.options,
+          optionShuffleMap: q.optionShuffleMap,
           isCorrect: selectedAnswer === q.answer,
         }
       }),
